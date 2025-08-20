@@ -13,37 +13,37 @@ import TabsSection from "./components/TabsSection";
 const App = () => {
   const data = [
     {
-      name: "Alice",
+      name: "Single Code Base",
       des: "Create apps for all major platforms with less coding effort. Write once, compile everywhere..",
       image:
         "./image/window.png",
     },
     {
-      name: "productivity",
+      name: "Productivity",
       des: "VCL Styles with design-time support: Prototype stylish UIs even faster by seeing immediately at design-time how your styled forms and controls will look when running..",
       image:
         "./image/productivity.png",
     },
     {
-      name: "lice",
+      name: "Linux",
       des: "Develop both server and FireMonkey GUI applications for Linux. Delphi now has LLDB version 12 support for debugging on Linux, also adopted for iOS Simulator.",
       image:
         "./image/linux.png",
     },
     {
-      name: "Charlie",
+      name: "Windows 11",
       des: "Modernize VCL apps for Windows 11 with up-to-date user interface controls, WinRT APIs, and HighDPI-related features",
       image:
         "./image/microsoft.png",
     },
     {
-      name: "harlie",
+      name: "User Experience",
       des: "Completely rebuilt Welcome Page with a native look and feel, and a UI that fits the IDE, and customizable layout and content.",
       image:
         "./image/user.png",
     },
     {
-      name: "Carlie",
+      name: "Android",
       des: "Support for the latest Android Level 32 API and latest Billing APIs, and migration to use the AndroidX libraries. Android support for multiple classes.",
       image:
         "./image/android.png",
@@ -62,22 +62,22 @@ const App = () => {
     },
     {
       heading: "Learning & Development",
-      Title: "Top 5 Platforms for Windows Application Development In 2022",
+      Title: "Everything You Need to Know About Cross-Platform Development",
       end: "Read More ",
     },
     {
       heading: "Learning & Development",
-      Title: "Top 5 Platforms for Windows Application Development In 2022",
+      Title: "A Complete Guide To Programming In C++ – Visual Programming",
+      end: "Read More ",
+    },
+    {
+        heading: "Learning & Development",
+      Title: "A Complete Guide To Programming In C++ – Object Oriented Programming",
       end: "Read More ",
     },
     {
       heading: "Learning & Development",
-      Title: "Top 5 Platforms for Windows Application Development In 2022",
-      end: "Read More ",
-    },
-    {
-      heading: "Learning & Development",
-      Title: "Top 5 Platforms for Windows Application Development In 2022",
+      Title: "How C++ Works With Libraries and More",
       end: "Read More ",
     },
   ];
@@ -204,6 +204,7 @@ const App = () => {
       <Rectangle />
       <Studio/>
       <MyComponent  items ={data}/>
+      <Card data={data} />
       <TabsSection tabsData={tabsData} />
       <Picture/>
       <CardList data={BlogData}/>
