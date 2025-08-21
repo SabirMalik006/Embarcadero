@@ -8,8 +8,8 @@ function MyComponent({ items }) {
       <div className="absolute hidden 2xl:block -left-16 top-1/2 -translate-y-1/2 w-200 h-200  bg-[#E9F8FB] rounded-full opacity-70 blur-2xl"></div>
 
       {/* Boxes grid */}
-      <div className="flex justify-center items-center mt-6 w-full px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl xl:max-w-6xl w-full z-10">
+      <div className="flex justify-center items-center mt-6 w-full px-4 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  max-w-5xl xl:max-w-7xl w-full z-10">
           {items.map((item, index) => (
             <Box
               key={index}
@@ -22,7 +22,7 @@ function MyComponent({ items }) {
       </div>
 
       {/* Arrows */}
-      <div className="flex justify-center items-center gap-2 mt-6">
+      <div className="flex justify-center items-center gap-4 mt-6">
         <div className="mt-6 flex justify-center items-center bg-gray-400 w-10 h-10 text-3xl text-white rounded-lg cursor-pointer">
           <img src="./image/Vector 106 (1).png" alt="" />
         </div>

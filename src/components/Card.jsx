@@ -2,12 +2,23 @@ import React from "react";
 
 function Card({ heading, Title, end }) {
   return (
-    <div className="  rounded-lg  text-left w-full py-4   ">
-      <h2 className="text-sm font-medium tracking-wide text-gray-500 mb-4 2xl:text-lg">{heading}</h2>
-      <h1 className="text-lg font-bold my-2 tracking-wide mb-4 2xl:text-3xl">{Title}</h1>
-      <button className="text-gray-500 underline  gap-2 flex items-center text-sm 2xl:text-lg">
+    <div
+      className="
+        flex flex-col justify-center items-start
+        gap-4
+        w-full h-auto
+        rounded-2xl 
+      "
+    >
+      <h2 className="text-sm font-normal tracking-wide text-gray-500  2xl:text-lg ">
+        {heading}
+      </h2>
+      <h1 className="text-md lg:text-xl font-semibold tracking-wide leading-snug 2xl:text-2xl">
+        {Title}
+      </h1>
+      <button className="flex font-normal items-center gap-2 text-sm lg:text-xl text-gray-500 underline 2xl:text-lg ">
         {end}
-        <img className="w-4 2xl:w-6 " src="./image/picArrow.png" alt="" />
+        <img className="w-4 2xl:w-6" src="./image/picArrow.png" alt="" />
       </button>
     </div>
   );

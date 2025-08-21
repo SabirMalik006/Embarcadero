@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import Card from "./components/Card";
 import CardList from "./components/CardList";
 import TabsSection from "./components/TabsSection";
+import HomePageWithRectangle from "./components/HomePageWithRectangle";
+import TopBar from "./components/TopBar";
 const App = () => {
   const data = [
     {
@@ -85,7 +87,7 @@ const App = () => {
     Design: [
       {
         image: "./image/Frame 427318143.png",
-        heading: "Design Beautiful Desktop and Mobile App UIs with Delphi.",
+        heading: "Design beautiful desktop and mobile app UIs with RAD Studio.",
         bullets: [
           "Use Delphi's award-winning VCL framework for Windows and the FireMonkey (FMX) visual framework for cross-platform responsive UIs.",
           "Enjoy the new high-DPI compatible IDE on 4k+ screens",
@@ -198,10 +200,12 @@ const App = () => {
   };
 
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
+      <TopBar />
       <Navbar />
-      <HomePage />
-      <Rectangle />
+      {/* <HomePage /> */}
+      {/* <Rectangle /> */}
+      <HomePageWithRectangle/>
       <Studio/>
       <MyComponent  items ={data}/>
       <Card data={data} />

@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav Links */}
-        <ul className="hidden xl:flex gap-6 flex-shrink absolute left-1/2 -translate-x-1/2 ">
+        <ul className="hidden xl:flex  gap-6 flex-shrink absolute left-1/2 -translate-x-1/2 ">
           <li className="flex items-center gap-1">
             <a href="#">Products</a>
             <img src="./image/downArrow.png" alt="" />
@@ -100,28 +100,29 @@ const Navbar = () => {
         <div className="questions flex gap-1 flex-wrap items-center justify-center px-4 md:px-0">
           <a
             href="#"
-            className="flex items-center border-b border-gray-600 text-sm/4"
+            className="flex items-center border-b border-gray-600 text-sm leading-none -pb-[3px]"
           >
             What's New?
           </a>
+
           <img src="./image/dash.png" alt="" />
           <a
             href="#"
-            className="flex items-center border-b border-gray-600 text-sm/4"
+            className="flex items-center border-b border-gray-600 text-sm leading-none -pb-[3px]"
           >
             Product Edition
           </a>
           <img src="./image/dash.png" alt="" />
           <a
             href="#"
-            className="flex items-center border-b border-gray-600 text-sm/4"
+            className="flex items-center border-b border-gray-600 text-sm leading-none -pb-[3px]"
           >
             Previous Version
           </a>
           <img src="./image/dash.png" alt="" />
           <a
             href="#"
-            className="flex items-center border-b border-gray-600 text-sm/4"
+            className="flex items-center border-b border-gray-600 text-sm leading-none -pb-[3px]"
           >
             Customers
           </a>

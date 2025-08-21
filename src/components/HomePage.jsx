@@ -2,9 +2,9 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="w-full  max-w-[1920px] mx-auto px-4 relative ">
+    <div className="w-full  max-w-[1920px] mx-auto px-4 relative   ">
       {/* Bubble on left side */}
-      <div className="absolute hidden  lg:block  -bottom-100 -left-90  w-150 h-150  bg-[#E9F8FB] rounded-full opacity-70 blur-2xl "></div>
+      <div className="absolute hidden  lg:block  -bottom-150 left-90  w-150 h-150  bg-blue-700  opacity-70 blur-2xl "></div>
 
       <div className="flex flex-col justify-center items-center mt-16 text-center">
         <h1

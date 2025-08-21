@@ -3,9 +3,9 @@ import React from "react";
 const Rectangle = () => {
   return (
     <>
-      <div className="relative overflow-hidden px-10" >
+      <div className="relative  px-10 overflow-x-hidden " >
         {/* Bubble on left side */}
-      <div className="absolute hidden lg:block  -top-10 -right-80  w-200 h-250  bg-red-100 rounded-full opacity-70 blur-3xl "></div>
+      <div className="absolute hidden lg:block  -top-70 -right-80  w-200 h-250  bg-red-100 rounded-full opacity-70 blur-3xl "></div>
         <div className="image w-full flex justify-center mt-32 relative px-4 sm:px-[0px] ">
           <img
             className="w-full h-auto object-contain max-w-5xl lg:max-w-5xl xl:max-w-6xl 2xl:w-[1274px]"
