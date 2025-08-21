@@ -39,7 +39,19 @@ function CardList({ data }) {
   };
 
   return (
-    <div className="w-full flex flex-col items-center px-6 sm:px-6 md:px-8 lg:px-10 2xl:px-0">
+    <div className="w-full flex flex-col items-center px-6 sm:px-6 md:px-8 lg:px-10 2xl:px-0 relative">
+      <div
+        className="absolute hidden 2xl:block left-0 bottom-0 
+  w-[500px] h-[400px]  
+  bg-blue-100/50 opacity-70 blur-3xl 
+  rounded-xl"
+      ></div>
+      <div
+        className="absolute hidden 2xl:block right-0 top-0 
+  w-[500px] h-[400px]  
+  bg-blue-100/50 opacity-70 blur-3xl 
+  rounded-xl"
+      ></div>
       {/* Heading */}
       <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-10 mb-12 text-center lg:text-left max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full">
         <p className="text-2xl md:text-4xl 2xl:text-5xl font-normal 2xl:font-semibold">
@@ -62,9 +74,7 @@ function CardList({ data }) {
       <div className="w-full flex justify-center">
         <div className="w-full max-w-7xl">
           {/* Mobile (1 per row → line every card) */}
-          <div className="block sm:hidden w-full">
-            {renderCards(1)}
-          </div>
+          <div className="block sm:hidden w-full">{renderCards(1)}</div>
 
           {/* Tablet (2 per row → line every 2 cards) */}
           <div className="hidden sm:block lg:hidden w-full">
@@ -72,9 +82,7 @@ function CardList({ data }) {
           </div>
 
           {/* Desktop / 2xl (3 per row → line only after first 3) */}
-          <div className="hidden lg:block w-full">
-            {renderCards(3, true)}
-          </div>
+          <div className="hidden lg:block w-full">{renderCards(3, true)}</div>
         </div>
       </div>
     </div>

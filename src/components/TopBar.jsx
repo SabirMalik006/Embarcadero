@@ -43,17 +43,17 @@ const TopBar = () => {
             <img
               src="./image/Search.png"
               alt="Search"
-              className="w-5 h-5 sm:w-6 sm:h-6"
+              className="w-5 h-5 "
             />
             <img
               src="./image/Group 1000003433.png"
               alt="Icon"
-              className="w-5 h-5 sm:w-6 sm:h-6"
+              className="w-5 h-5 "
             />
             <img
               src="./image/heello.png"
               alt="User"
-              className="w-5 h-5 sm:w-6 sm:h-6"
+              className="w-5 h-5 "
             />
           </div>
         </div>

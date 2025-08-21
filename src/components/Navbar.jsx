@@ -38,12 +38,12 @@ const Navbar = () => {
 
         {/* Buttons for tablet/desktop */}
         <div className="hidden sm:flex  items-center gap-4 ml-auto">
-          <button className="p-2 hidden sm:block md:block">Sign In</button>
+          <button className="p-2 hidden sm:block md:block"><a href="">Sign In</a></button>
           <button className="border p-2 rounded-lg hidden sm:block md:block">
-            Buy Now
+            <a href="">Buy Now</a>
           </button>
           <button className="p-2 rounded-lg bg-black text-white">
-            Free Trial
+            <a href="">Free Trial</a>
           </button>
         </div>
 
@@ -82,8 +82,8 @@ const Navbar = () => {
           </ul>
           {/* Buttons for mobile menu */}
           <div className="flex flex-col gap-2 mt-2 sm:hidden ">
-            <button className="p-2">Sign In</button>
-            <button className="border p-2 rounded-lg">Buy Now</button>
+            <button className="p-2"><a href="">Sign In</a></button>
+            <button className="border p-2 rounded-lg"><a href="">Buy Now</a></button>
           </div>
         </div>
       )}

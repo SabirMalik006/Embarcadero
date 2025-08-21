@@ -5,14 +5,14 @@ const HomePageWithRectangle = () => {
     <div className="w-full max-w-[1920px] mx-auto  relative">
       {/* Bubble on left side (HomePage) */}
       <div
-        className="absolute hidden md:block 
-  w-[700px] h-[500px] 
-  bg-[#E9F8FB] rounded-tr-full top-25 opacity-70 blur-xl top-blur"
+        className="absolute hidden 2xl:block 
+  w-[600px] h-[500px] 
+  bg-[#e8edee] rounded-tr-full top-25 opacity-20 "
       ></div>
 
-      {/* Bubble on right side (Rectangle) */}
+      {/* Bubble on right side (Rectangle)  */}
       <div
-        className="absolute hidden md:block top-0 right-0 
+        className="absolute hidden 2xl:block top-0 right-0 
   w-[600px] h-[1080px] 
   bg-red-100 opacity-70 blur-3xl 
   rounded-l-full"

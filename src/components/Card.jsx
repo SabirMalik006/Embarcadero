@@ -8,9 +8,11 @@ function Card({ heading, Title, end }) {
         gap-4
         w-full h-auto
         rounded-2xl 
+        my-8 z-50
       "
     >
-      <h2 className="text-sm font-normal tracking-wide text-gray-500  2xl:text-lg ">
+     
+      <h2 className="text-sm font-normal tracking-wide text-gray-500  2xl:text-lg  ">
         {heading}
       </h2>
       <h1 className="text-md lg:text-xl font-semibold tracking-wide leading-snug 2xl:text-2xl">
