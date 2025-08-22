@@ -11,60 +11,69 @@ function CardList({ data }) {
   };
 
   // Responsive breakpoints: handle with Tailwind hidden + maps
-  const renderCards = (chunkSize, onlyFirstRowLine = false) => {
-    const chunks = chunkArray(data, chunkSize);
+  // Responsive breakpoints: handle with Tailwind hidden + maps
+const renderCards = (chunkSize, onlyFirstRowLine = false) => {
+  const chunks = chunkArray(data, chunkSize);
 
-    return chunks.map((group, rowIndex) => (
-      <div key={rowIndex} className="w-full">
-        {/* Row of cards */}
-        <div
-          className={`grid gap-4 md:gap-6 lg:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-${chunkSize}`}
-        >
-          {group.map((item, index) => (
-            <Card
-              key={index}
-              heading={item.heading}
-              Title={item.Title}
-              end={item.end}
-            />
-          ))}
-        </div>
+  return chunks.map((group, rowIndex) => (
+    <div key={rowIndex} className="w-full">
+      {/* Row of cards */}
+      <div
+        className={`
+          grid gap-4 md:gap-6 lg:gap-8 
+          grid-cols-1 
+          sm:grid-cols-2 
+          lg:grid-cols-3
+          xl:grid-cols-3
 
-        {/* Dotted line after rows */}
-        {(onlyFirstRowLine ? rowIndex === 0 : rowIndex < chunks.length - 1) && (
-          <hr className="border-t border-dotted border-gray-300 my-6" />
-        )}
+        `}
+      >
+        {group.map((item, index) => (
+          <Card
+            key={index}
+            heading={item.heading}
+            Title={item.Title}
+            end={item.end}
+          />
+        ))}
       </div>
-    ));
-  };
+
+      {/* Dotted line after rows */}
+      {(onlyFirstRowLine ? rowIndex === 0 : rowIndex < chunks.length - 1) && (
+        <hr className="my-6 custom-dashed" />
+      )}
+    </div>
+  ));
+};
+
 
   return (
     <div className="w-full flex flex-col items-center px-6 sm:px-6 md:px-8 lg:px-10 2xl:px-0 relative">
       <div
-        className="absolute hidden 2xl:block left-0 bottom-0 
+        className="absolute hidden xl:block left-0 xl:left-10 2xl:left-30  bottom-0 
   w-[500px] h-[400px]  
-  bg-blue-100/50 opacity-70 blur-3xl 
+  bg-blue-100 opacity-70 blur-3xl 
   rounded-xl"
       ></div>
       <div
-        className="absolute hidden 2xl:block right-0 top-0 
+        className="absolute hidden xl:block right-0 top-0 
   w-[500px] h-[400px]  
-  bg-blue-100/50 opacity-70 blur-3xl 
+  bg-blue-100 opacity-70 blur-3xl 
   rounded-xl"
       ></div>
       {/* Heading */}
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-10 mb-12 text-center lg:text-left max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full">
-        <p className="text-2xl md:text-4xl 2xl:text-5xl font-normal 2xl:font-semibold">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-15  text-center lg:text-left max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full">
+        <p className="text-2xl md:text-4xl xl:text-5xl font-normal xl:font-semibold z-50">
           Learn More on the{" "}
           <span
             className="bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
-            inline-block text-transparent bg-clip-text font-semibold 2xl:text-5xl"
+            inline-block text-transparent bg-clip-text font-semibold xl:text-5xl"
           >
             &nbsp;Embarcadero Blog
           </span>
         </p>
         <img
-          className="hidden lg:block w-10 sm:w-12 2xl:w-14"
+          className="hidden lg:block w-10 sm:w-12 2xl:w-14 z-51"
           src="./image/Group 39868.png"
           alt="Arrow Icon"
         />

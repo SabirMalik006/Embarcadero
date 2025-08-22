@@ -50,6 +50,42 @@ const App = () => {
       image:
         "./image/android.png",
     },
+    {
+      name: "Single Code Base",
+      des: "Create apps for all major platforms with less coding effort. Write once, compile everywhere..",
+      image:
+        "./image/window.png",
+    },
+    {
+      name: "Productivity",
+      des: "VCL Styles with design-time support: Prototype stylish UIs even faster by seeing immediately at design-time how your styled forms and controls will look when running..",
+      image:
+        "./image/productivity.png",
+    },
+    {
+      name: "Linux",
+      des: "Develop both server and FireMonkey GUI applications for Linux. Delphi now has LLDB version 12 support for debugging on Linux, also adopted for iOS Simulator.",
+      image:
+        "./image/linux.png",
+    },
+    {
+      name: "Windows 11",
+      des: "Modernize VCL apps for Windows 11 with up-to-date user interface controls, WinRT APIs, and HighDPI-related features",
+      image:
+        "./image/microsoft.png",
+    },
+    {
+      name: "User Experience",
+      des: "Completely rebuilt Welcome Page with a native look and feel, and a UI that fits the IDE, and customizable layout and content.",
+      image:
+        "./image/user.png",
+    },
+    {
+      name: "Android",
+      des: "Support for the latest Android Level 32 API and latest Billing APIs, and migration to use the AndroidX libraries. Android support for multiple classes.",
+      image:
+        "./image/android.png",
+    },
   ];
   const BlogData = [
     {
@@ -203,12 +239,9 @@ const App = () => {
     <div className="overflow-x-hidden">
       <TopBar />
       <Navbar />
-      {/* <HomePage /> */}
-      {/* <Rectangle /> */}
       <HomePageWithRectangle/>
       <Studio/>
       <MyComponent  items ={data}/>
-      <Card data={data} />
       <TabsSection tabsData={tabsData} />
       <Picture/>
       <CardList data={BlogData}/>

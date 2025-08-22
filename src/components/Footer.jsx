@@ -2,109 +2,169 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full  border-t border-gray-200">
+    <footer className="w-full">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 ">
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-10">
+      <div className="max-w-[1920px] mx-auto py-10 px-10">
+        <div
+          className="
+            flex flex-col items-center justify-center text-center
+            lg:flex-row lg:justify-between lg:items-start lg:text-left
+            xl:flex-col xl:items-start xl:text-left
+            2xl:flex-row 2xl:text-left
+            gap-10  px-10 2xl:px-40 
+          "
+        >
           {/* Logo */}
-          <div className="flex justify-center lg:justify-start">
-            <img
-              src="./image/image 1.png"
-              alt="Logo"
-              className="w-24 sm:w-28 md:w-32 2xl:w-40 h-auto object-contain"
-            />
+          <div
+            className="
+              flex justify-center lg:justify-start
+              xl:justify-start xl:mb-6
+            "
+          >
+          <img
+  src="./image/image 1.png"
+  alt="Logo"
+  className="w-[130px] sm:w-[150px] md:w-[202px]  object-contain"
+/>
+
           </div>
 
           {/* Links Section */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 w-full text-center sm:text-left 2xl:ml-30">
+          <div
+            className="
+    grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6   
+    text-center sm:text-left 2xl:ml-30
+    gap-[4.425rem]
+  "
+          >
             {/* Products */}
-            <ul className="flex flex-col gap-2">
-              <li className="font-bold text-sm sm:text-base md:text-lg">
+            <ul className="flex flex-col gap-4 items-start justify-start">
+              <li className="font-bold text-sm sm:text-base md:text-lg xl:text-xl text-gray-800">
                 Products
               </li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">RAD Studio</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">Delphi</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">C++ Builder</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">InterBase</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">RAD Server</a></li>
+              <li className="text-xs sm:text-sm xl:text-base text-[#4B5563]">
+                <a href="">RAD Studio</a>
+              </li>
+              <li className="text-xs sm:text-sm xl:text-base text-[#4B5563]">
+                <a href="">Delphi</a>
+              </li>
+              <li className="text-xs sm:text-sm xl:text-base text-[#4B5563]">
+                <a href="">C++ Builder</a>
+              </li>
+              <li className="text-xs sm:text-sm xl:text-base text-[#4B5563]">
+                <a href="">InterBase</a>
+              </li>
+              <li className="text-xs sm:text-sm xl:text-base text-[#4B5563]">
+                <a href="">RAD Server</a>
+              </li>
             </ul>
 
             {/* Free Tools */}
-            <ul className="flex flex-col gap-2">
-              <li className="font-bold text-sm sm:text-base md:text-lg">
-                Free Tools
+            <ul className="flex flex-col gap-4 items-start justify-start">
+              <li className="font-bold text-sm sm:text-base md:text-lg text-gray-800">
+                <a href="">Free Tools</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">C++ Compiler</a></li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">C++ Compiler</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">C++ Builder Community ED</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">Delphi Community ED</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base">REST Debugger</li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">REST Debugger</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">Interbase Developer Edition</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">FMX Stencils</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">DEV-C++</a></li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">FMX Stencils</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">DEV-C++</a>
+              </li>
             </ul>
 
             {/* Resources */}
-            <ul className="flex flex-col gap-2">
-              <li className="font-bold text-sm sm:text-base md:text-lg">
+            <ul className="flex flex-col gap-6 items-start justify-start">
+              <li className="font-bold text-sm sm:text-base md:text-lg text-gray-800">
                 <a href="">Resources</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">Events & Webinars</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">White Papers</a></li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">White Papers</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">Success Stories</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">For Educators</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">Partners</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">Certifications</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">MVP Program</a></li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">For Educators</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">Partners</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">Certifications</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">MVP Program</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 Web App Development
               </li>
             </ul>
 
             {/* Community */}
-            <ul className="flex flex-col gap-2">
-              <li className="font-bold text-sm sm:text-base md:text-lg">
+            <ul className="flex flex-col gap-4 items-start justify-start">
+              <li className="font-bold text-sm sm:text-base md:text-lg text-gray-800">
                 <a href="">Community</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">Blogs</a></li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">Blogs</a>
+              </li>
             </ul>
 
             {/* Company */}
-            <ul className="flex flex-col gap-2">
-              <li className="font-bold text-sm sm:text-base md:text-lg">
+            <ul className="flex flex-col gap-4 items-start justify-start">
+              <li className="font-bold text-sm sm:text-base md:text-lg text-gray-800">
                 <a href="">Company</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">About Us</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">Contact Us</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">Contact Sales</a></li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">Legal</a></li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">About Us</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">Contact Us</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">Contact Sales</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">Legal</a>
+              </li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">Privacy Policy</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base"><a href="">Logo</a></li>
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
+                <a href="">Logo</a>
+              </li>
             </ul>
 
             {/* Get in Touch */}
-            <ul className="flex flex-col gap-2">
-              <li className="font-bold text-sm sm:text-base md:text-lg">
+            <ul className="flex flex-col gap-4 items-start justify-start">
+              <li className="font-bold text-sm sm:text-base md:text-lg text-gray-800">
                 <a href="">Get in Touch</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">US: (512)226-8080</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">DE: 49(0)6103-3866-100</a>
               </li>
-              <li className="text-xs sm:text-sm md:text-base">
+              <li className="text-xs sm:text-sm md:text-base text-[#4B5563]">
                 <a href="">info@embarcadero.com</a>
               </li>
             </ul>
@@ -113,12 +173,12 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="w-full ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm">
+      <div className="w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-4 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 text-xs sm:text-sm text-center">
           <p className="text-center sm:text-left">
             © 2022 Embarcadero Inc. All rights reserved
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center">
             <img src="./image/twitter.png" alt="Twitter" className="w-5 h-5" />
             <img src="./image/face.png" alt="Facebook" className="w-5 h-5" />
             <img src="./image/ball.png" alt="Dribbble" className="w-5 h-5" />

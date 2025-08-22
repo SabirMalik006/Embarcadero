@@ -3,10 +3,10 @@ import React from "react";
 const Rectangle = () => {
   return (
     <>
-      <div className="relative  px-10 overflow-x-hidden " >
+      <div className="relative  px-10 overflow-x-hidden ">
         {/* Bubble on left side */}
-      <div className="absolute hidden lg:block  -top-70 -right-80  w-200 h-250  bg-red-100 rounded-full opacity-70 blur-3xl "></div>
-        <div className="image w-full flex justify-center mt-32 relative px-4 sm:px-[0px] ">
+        <div className="absolute hidden lg:block  -top-70 -right-80  w-200 h-250  bg-red-100 rounded-full opacity-70 blur-3xl "></div>
+        <div className="image w-full flex justify-center mt-32 relative px-4 sm:px-[0px]  ">
           <img
             className="w-full h-auto object-contain max-w-5xl lg:max-w-5xl xl:max-w-6xl 2xl:w-[1274px]"
             src="./image/Rectangle 364.png"
@@ -35,13 +35,11 @@ const Rectangle = () => {
         flex flex-col sm:flex-row 
         items-center sm:items-start 
         gap-4 text-center sm:text-left
+        
       "
             >
-              <div className="flex-shrink-0">
-                <img
-                  src="./image/image 22.png"
-                  alt=""
-                />
+              <div className="flex-shrink-0 ">
+                <img src="./image/image 22.png" alt="" />
               </div>
               <div>
                 <h1 className="text-lg sm:text-xl md:text-xl font-bold">
@@ -54,7 +52,10 @@ const Rectangle = () => {
             </div>
 
             <div className="flex-shrink-0 w-full sm:w-auto z-20">
-              <button className="bg-black  text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto">
+              <button
+                className="bg-black text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto 
+  transition-colors duration-300 hover:bg-white hover:text-black border border-black"
+              >
                 View Resources
               </button>
             </div>

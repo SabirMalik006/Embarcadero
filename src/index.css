@@ -4,7 +4,7 @@
 @import "@fontsource/archivo/700.css";
 
 body {
-  background: #FDF7F8;
+  background: #F9F9FE;
   margin: 0;
   padding: 0;
   font-family: "Archivo", sans-serif;
@@ -12,6 +12,19 @@ body {
   height: 100%;
   width: 100%;
   
+}
+
+.custom-dashed {
+  border: 0;
+  border-top: 2px dashed #d4d4d4;
+  border-image: repeating-linear-gradient(
+    to right,
+    #d4d4d4 0,
+    #d4d4d4 10px,
+    transparent 10px,
+    transparent 20px
+    opacity(0.5)
+  ) 1;
 }
 
 
