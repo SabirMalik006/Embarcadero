@@ -50,9 +50,12 @@ const Global = () => {
                backdrop-blur-md rounded-lg 
                w-85.75 sm:w-94.25 xl:w-90.5 2xl:w-88.5  "
             />
-            <button className="px-8 py-3  bg-black text-white rounded-lg z-43 2xl:w-30.25">
-              Subscribe
-            </button>
+            <button className="px-8 py-3 bg-black text-white rounded-lg z-43 2xl:w-30.25 
+  transition-all duration-300 ease-in-out 
+  hover:bg-white hover:text-black border border-black">
+  Subscribe
+</button>
+
           </div>
         </div>
 
