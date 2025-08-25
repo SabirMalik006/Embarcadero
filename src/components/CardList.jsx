@@ -16,7 +16,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
   const chunks = chunkArray(data, chunkSize);
 
   return chunks.map((group, rowIndex) => (
-    <div key={rowIndex} className="w-full">
+    <div key={rowIndex} className="w-full 2xl:px-48 xl:px-20 px-6.25">
       {/* Row of cards */}
       <div
         className={`
@@ -40,7 +40,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
 
       {/* Dotted line after rows */}
       {(onlyFirstRowLine ? rowIndex === 0 : rowIndex < chunks.length - 1) && (
-        <hr className="my-6 custom-dashed" />
+        <hr className="my-10 sm:my-12 xl:my-20 custom-dashed" />
       )}
     </div>
   ));
@@ -48,7 +48,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
 
 
   return (
-    <div className="w-full flex flex-col items-center px-6 sm:px-6 md:px-8 lg:px-10 2xl:px-0 relative">
+    <div className="w-full flex flex-col items-center relative">
       <div
         className="absolute hidden xl:block left-0 xl:left-10 2xl:left-30  bottom-0 
   w-[500px] h-[400px]  
@@ -62,8 +62,8 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
   rounded-xl"
       ></div>
       {/* Heading */}
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-15  text-center lg:text-left max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full">
-        <p className="text-2xl md:text-4xl xl:text-5xl font-normal xl:font-semibold z-50">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap mb-[30px] mt-[80px] sm:mb-[64px]   xl:mt-[128px]  xl:mb-[105px] text-center lg:text-left max-w-5xl xl:max-w-6xl 2xl:max-w-[1920px] w-full">
+        <p className="text-[30px] sm:text-[36px] xl:text-5xl font-medium xl:font-semibold z-50">
           Learn More on the{" "}
           <span
             className="bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
@@ -81,7 +81,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
 
       {/* Cards */}
       <div className="w-full flex justify-center">
-        <div className="w-full max-w-7xl">
+        <div className="w-full max-w-[1920px]">
           {/* Mobile (1 per row → line every card) */}
           <div className="block sm:hidden w-full">{renderCards(1)}</div>
 

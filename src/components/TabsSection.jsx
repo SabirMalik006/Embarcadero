@@ -5,11 +5,9 @@ function TabsSection({ tabsData }) {
   const tabNames = useMemo(() => Object.keys(tabsData), [tabsData]);
 
   const getTabsForWidth = (width) => {
-    if (width < 768) return tabNames.slice(0, 3);
-    if (width < 1024) return tabNames.slice(0, 6);
-    return tabNames.slice(0, 7);
+    if (width < 640) return tabNames.slice(0, 3); // mobile (<sm)
+    return tabNames.slice(0, 6); // sm+ screens
   };
-
   const [visibleTabs, setVisibleTabs] = useState(() =>
     getTabsForWidth(window.innerWidth)
   );
@@ -26,18 +24,18 @@ function TabsSection({ tabsData }) {
     <>
       <div className="flex justify-center items-center text-center mt-14 px-4">
         <p
-          className="text-3xl md:text-4xl 2xl:text-5xl font-bold 
+          className="text-3xl sm:text-[36px] xl:text-5xl font-bold 
           bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
-          inline-block text-transparent bg-clip-text"
+           text-transparent bg-clip-text hidden sm:block"
         >
           <span className="text-black">Ignite </span> Your Imagination
         </p>
       </div>
 
-      <div className="w-full flex justify-center mt-12 mb-10 px-4 md:px-6 lg:px-0 ">
-        <div className="w-full max-w-5xl xl:max-w-7xl z-10  ">
+      <div className="w-full flex justify-center mt-12 mb-10  ">
+        <div className="w-full max-w-5xl xl:max-w-[1440px] px-[16px] sm:px-[24.5px] xl:px-[80px] 2xl:max-w-[1920px] z-10 2xl:px-[192px]  ">
           {/* Tabs */}
-          <div className="flex border border-gray-300 rounded-xl overflow-hidden p-1">
+          <div className="flex border border-gray-300 rounded-xl overflow-hidden p-2">
             {visibleTabs.map((tab) => (
               <button
                 key={tab}

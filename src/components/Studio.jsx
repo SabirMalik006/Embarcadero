@@ -3,24 +3,24 @@ import React from "react";
 const Studio = () => {
   return (
     <>
-      <div className="main flex justify-center items-center mt-32 relative ">
+      <div className="main flex justify-center items-center mt-[128px] relative  ">
         <img
-          className="hidden  2xl:block absolute right-83 bottom-24 w-16 sm:w-24 md:w-auto"
+          className="hidden  2xl:block absolute right-72 bottom-12 w-16 sm:w-24 md:w-auto"
           src="./image/Group.png"
           alt=""
         />
 
         {/* Top-right Arrow */}
         <img
-          className="hidden  2xl:block absolute right-76 top-0 w-16 "
+          className="hidden  2xl:block absolute right-65 top-0 w-16 "
           src="./image/arrow.png"
           alt=""
         />
 
         {/* Text Content */}
-        <div className="flex items-center justify-center px-4">
-          <div className="text-center w-full max-w-5xl xl:max-w-6xl 2xl:max-w-7xl z-10 px-4 py-4 rounded-lg">
-            <p className="mb-8 text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold">
+        <div className="flex items-center justify-center px-[16px] sm:px-[24.5px] xl:px-[83px] 2xl:px-[323px]">
+          <div className="text-center w-full max-w-[745px] xl:max-w-[1440px] 2xl:max-w-[1920px] z-10  rounded-lg ">
+            <p className="mb-4 text-[28px] sm:text-[40px] lg:text-5xl font-bold">
               <span
                 className="bg-gradient-to-r from-[#cc1184] via-[#9e34cf] to-[#232efa] 
                    inline-block text-transparent bg-clip-text"
@@ -31,9 +31,9 @@ const Studio = () => {
             </p>
 
             <h3
-              className="pr-4 max-w-[1274px] 
-                 font-archivo not-italic font-normal 
-                 text-[24px] leading-[150%] tracking-[-1px] 
+              className=" max-w-[1920px] 
+                 font-archivo not-italic font-normal text-[18px]
+                 sm:text-[20px] xl:text-[24px] leading-[150%] tracking-[-1px] 
                  text-center text-[#525252] 
                  flex-none order-1 self-stretch grow-0 
                  z-[1] mx-auto "

@@ -11,7 +11,7 @@ const Footer = () => {
             lg:flex-row lg:justify-between lg:items-start lg:text-left
             xl:flex-col xl:items-start xl:text-left
             2xl:flex-row 2xl:text-left
-            gap-10  px-10 2xl:px-40 
+            gap-10   2xl:px-40 
           "
         >
           {/* Logo */}
@@ -21,20 +21,19 @@ const Footer = () => {
               xl:justify-start xl:mb-6
             "
           >
-          <img
-  src="./image/image 1.png"
-  alt="Logo"
-  className="w-[130px] sm:w-[150px] md:w-[202px]  object-contain"
-/>
-
+            <img
+              src="./image/image 1.png"
+              alt="Logo"
+              className="w-[130px] sm:w-[150px] md:w-[202px]  object-contain cursor-pointer"
+            />
           </div>
 
           {/* Links Section */}
           <div
             className="
-    grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6   
+    grid gap-[16px] sm:gap-[25px] xl:gap-[70.8px] grid-cols-2 sm:grid-cols-3 lg:grid-cols-6   
     text-center sm:text-left 2xl:ml-30
-    gap-[4.425rem]
+    
   "
           >
             {/* Products */}
@@ -174,15 +173,39 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-4 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 text-xs sm:text-sm text-center">
+        <div
+          className="max-w-[1920px] mx-4 sm:mx-20 py-4 
+                  flex flex-col-reverse sm:flex-row 
+                  justify-center sm:justify-between items-center 
+                  gap-4 text-xs sm:text-sm text-center font-normal"
+        >
+          {/* Text */}
           <p className="text-center sm:text-left">
             © 2022 Embarcadero Inc. All rights reserved
           </p>
-          <div className="flex gap-4 justify-center">
-            <img src="./image/twitter.png" alt="Twitter" className="w-5 h-5" />
-            <img src="./image/face.png" alt="Facebook" className="w-5 h-5" />
-            <img src="./image/ball.png" alt="Dribbble" className="w-5 h-5" />
-            <img src="./image/github.png" alt="GitHub" className="w-5 h-5" />
+
+          {/* Social Icons */}
+          <div className="flex gap-6 justify-center">
+            <img
+              src="./image/twitter.png"
+              alt="Twitter"
+              className="w-6 h-6 cursor-pointer"
+            />
+            <img
+              src="./image/face.png"
+              alt="Facebook"
+              className="w-6 h-6 cursor-pointer"
+            />
+            <img
+              src="./image/ball.png"
+              alt="Dribbble"
+              className="w-6 h-6 cursor-pointer"
+            />
+            <img
+              src="./image/github.png"
+              alt="GitHub"
+              className="w-6 h-6 cursor-pointer"
+            />
           </div>
         </div>
       </div>

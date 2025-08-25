@@ -3,7 +3,7 @@ import { IoCloudDownloadOutline } from "react-icons/io5";
 
 function CustomContentList({ data }) {
   return (
-    <div className="space-y-6  lg:px-0 px-6">
+    <div className="space-y-6  lg:px-0 ">
       {data.map((item, index) => (
         <div
           key={index}
@@ -15,7 +15,7 @@ function CustomContentList({ data }) {
             rounded-lg 
             overflow-hidden 
             mx-auto
-            max-w-5xl xl:max-w-7xl
+            max-w-5xl xl:max-w-[1920px]
           "
         >
           {/* Image Section */}
