@@ -10,7 +10,7 @@ import "swiper/css/grid";
 
 function MyComponent({ items }) {
   return (
-    <div className="relative w-full px-[16px] sm:px-[24.5px] xl:px-[83px] 2xl:px-[323px] mt-[80px] mb-[100px]">
+    <div className="relative w-full px-[16px] sm:px-[24.5px] xl:px-[83px] 2xl:px-[323px] mt-[48px] mb-[80px]">
       {/* Bubble on left side */}
       <div className="absolute hidden 2xl:block -left-16 top-1/2 -translate-y-1/2 w-52 h-52 bg-[#E9F8FB] rounded-full opacity-70 blur-2xl"></div>
 
@@ -53,10 +53,10 @@ function MyComponent({ items }) {
 
       {/* Custom Arrows */}
       <div className="flex justify-center items-center gap-4 mt-8">
-        <div className="custom-prev flex justify-center items-center bg-gray-400 w-10 h-10 rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
+        <div className="custom-prev flex justify-center items-center bg-gray-400 w-9 h-9 rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
           <img src="./image/Vector 106 (1).png" alt="Prev" />
         </div>
-        <div className="custom-next flex justify-center items-center bg-black w-10 h-10 rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
+        <div className="custom-next flex justify-center items-center bg-black w-9 h-9 rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
           <img src="./image/Vector 106.png" alt="Next" />
         </div>
       </div>

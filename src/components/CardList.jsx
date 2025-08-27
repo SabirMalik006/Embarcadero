@@ -50,30 +50,30 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
   return (
     <div className="w-full flex flex-col items-center relative">
       <div
-        className="absolute hidden xl:block left-0 xl:left-10 2xl:left-30  bottom-0 
+        className="absolute hidden xl:block left-0 xl:left-10   bottom-0 
   w-[500px] h-[400px]  
-  bg-blue-100 opacity-70 blur-3xl 
+  bg-blue-100/40 opacity-70 blur-3xl 
   rounded-xl"
       ></div>
       <div
-        className="absolute hidden xl:block right-0 top-0 
+        className="absolute hidden xl:block right-17 top-0 
   w-[500px] h-[400px]  
-  bg-blue-100 opacity-70 blur-3xl 
+  bg-blue-100/40 opacity-70 blur-3xl 
   rounded-xl"
       ></div>
       {/* Heading */}
-      <div className="flex flex-col lg:flex-row justify-center items-center gap mb-[30px] mt-[80px] sm:mb-[64px]   xl:mt-[128px]  xl:mb-[105px] text-center lg:text-left max-w-5xl xl:max-w-6xl 2xl:max-w-[1920px] w-full">
-        <p className="text-[30px] sm:text-[36px] xl:text-5xl font-medium xl:font-semibold z-50">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-[42px] mb-[30px] mt-[80px] sm:mb-[64px]   xl:mt-[128px]  xl:mb-[105px] text-center lg:text-left max-w-5xl xl:max-w-6xl 2xl:max-w-[1920px] w-full">
+        <p className="text-[30px] sm:text-[36px] xl:text-5xl font-semibold z-50">
           Learn More on the{" "}
           <span
-            className="bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
+            className="bg-gradient-to-r from-[#FE3B76] via-[#e0296f] to-[#cc00ff] 
             inline-block text-transparent bg-clip-text font-semibold xl:text-5xl"
           >
             &nbsp;Embarcadero Blog
           </span>
         </p>
         <img
-          className="hidden lg:block w-10 sm:w-12 2xl:w-14 z-51"
+          className="hidden lg:block w-10 sm:w-12 2xl:w-[108px] z-51"
           src="./image/Group 39868.png"
           alt="Arrow Icon"
         />

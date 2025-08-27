@@ -2,14 +2,14 @@ import React from "react";
 
 const TopBar = () => {
   return (
-    <div className="bg-[#262626] text-white px-4 sm:px-6 2xl:px-20 py-3 text-xs 2xl:text-base">
+    <div className="bg-[#262626] text-white sm:px-6 2xl:px-20 py-3 text-xs 2xl:text-base">
       <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 text-center sm:text-left">
         {/* Left Section */}
-        <div className="flex flex-col sm:flex-row items-center gap-2 flex-wrap">
-          <p className="flex flex-wrap gap-1 justify-center sm:justify-start">
+        <div className="flex flex-col sm:flex-row items-center gap-2 flex-wrap ">
+          <p className="flex flex-wrap text-[14px] gap-1 justify-center sm:justify-start">
             <span className="font-light">See what’s new in</span>&nbsp; Delphi,
             C++ Builder, and RAD Studio{" "}
-            <span className="hidden md:block">Watch The Replay</span>
+            <span className="hidden md:block text-[14px] cursor-pointer">Watch The Replay</span>
           </p>
           <a
   href="#"

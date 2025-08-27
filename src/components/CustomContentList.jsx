@@ -36,23 +36,23 @@ function CustomContentList({ data }) {
             <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-red-500/8 to-transparent pointer-events-none rounded-lg"></div>
 
             {/* Heading */}
-            <h2 className="text-xl font-bold 2xl:text-2xl 2xl:font-medium mb-4 ">
+            <h2 className="font-bold text-[24px] 2xl:text-2xl 2xl:font-medium mb-4 ">
               {item.heading}
             </h2>
 
             {/* Bullet Points */}
-            <ul className="list-disc list-inside font-normal text-sm 2xl:text-base space-y-3 mb-4 leading-relaxed">
+            <ul className="list-disc list-inside font-normal  text-[16px] 2xl:text-base space-y-3 mb-4 leading-relaxed">
               {item.bullets.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
             </ul>
 
             {/* Last line with icon */}
-            <p className="text-sm 2xl:text-lg inline-flex items-center gap-2 mt-2">
-              <span className="border-b border-gray-400 w-fit">
+            <p className="text-sm text-[18px] 2xl:text-lg inline-flex items-center gap-2 mt-2">
+              <span className="inline border-b border-gray-400">
                 {item.lastText}
               </span>
-              <IoCloudDownloadOutline className="w-5 h-5" />
+              <IoCloudDownloadOutline className="w-8 h-7 sm:w-8 sm:h-8 " />
             </p>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Global = () => {
   return (
-    <div className="relative max-w-[1920px] xl:mt-[128px] sm:mt-[144px]  mt-[80px]">
+    <div className="relative max-w-[1920px] xl:mt-[128px] sm:mt-[144px]  mt-[128px]  mr-3 sm:mr-0 ">
       {/* Background blur box */}
       <div
         className="absolute hidden xl:block 
@@ -45,8 +45,8 @@ const Global = () => {
               </div>
 
               {/* For below XL but SM and above (single line) */}
-              <div className="hidden sm:flex xl:hidden flex-col items-start  pl-8">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium bg-gradient-to-r from-red-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text tracking-wide">
+              <div className="hidden sm:flex xl:hidden flex-col items-start   pl-8">
+                <h3 className="text-2xl sm:text-[32px] lg:text-4xl font-medium bg-gradient-to-r from-red-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text tracking-wide">
                   <span className="text-black">Join Our</span> Global Developer
                   Community
                 </h3>
@@ -80,19 +80,19 @@ const Global = () => {
           <div
             className="flex flex-col sm:flex-row gap-4 
              justify-start sm:justify-center 2xl:justify-start 
-             w-full "
+             w-full mb-15"
           >
             <input
               type="text"
               placeholder="Your Email"
               className="px-5 py-[10px] bg-[#FFFEFE] border border-neutral-300 
                backdrop-blur-md rounded-lg 
-               w-full xs:w-[343px] sm:w-[377px] xl:w-[361px] xl:h-[52px] 2xl:w-[354px]"
+               w-[343px] sm:w-[377px] xl:w-[361px] xl:h-[52px] 2xl:w-[354px]"
             />
             <button
               className="flex flex-row justify-center items-center 
              px-6 py-3.5 gap-2.5 
-             w-full h-[52px] sm:w-[121px]  
+             w-[343px] h-[52px] sm:w-[121px]  
              bg-[#262626] text-white 
              shadow-[0px_4px_32px_rgba(255,94,101,0.1)] 
              rounded-lg 

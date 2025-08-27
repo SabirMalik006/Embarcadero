@@ -5,8 +5,8 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-[60px] md:px-[40px] 2xl:px-[150px]">
-      {/* -------- Top Navbar Section (wrapped with overflow-hidden div) -------- */}
+    <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-[24px] md:px-[40px] 2xl:px-[150px]">
+      {/* -------- Top Navbar Section -------- */}
       <div className="w-full overflow-hidden">
         <div className="flex items-center justify-between mt-4">
           {/* Logo */}
@@ -50,27 +50,36 @@ const Navbar = () => {
           </ul>
 
           {/* -------- Tablet View (745px - 1023px) -------- */}
-          <div className="hidden [@media(min-width:745px) and (max-width:1023px)]:flex items-center gap-4 ml-auto px-4 py-2 overflow-hidden">
+          <div className="hidden min-[745px]:flex lg:hidden items-center gap-2 ml-auto px-4 py-2">
             {/* Sign In */}
             <button className="p-2 group">
-              <a href="" className="relative inline-block">
+              <a href="" className="relative inline-block sm:text-[16px]">
                 Sign In
                 <span className="absolute left-0 bottom-[1px] h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
               </a>
             </button>
 
             {/* Buy Now */}
-            <button className="flex items-center justify-center px-4 py-2 w-[92px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
+            <button className="flex items-center justify-center  w-[89px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-[14px] transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
               <a href="" className="text-sm font-medium">
                 Buy Now
               </a>
             </button>
 
             {/* Free Trial */}
-            <button className="flex items-center justify-center px-4 py-2 w-[94px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black">
+            <button className="flex items-center justify-center  w-[91px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-[14px] transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black">
               <a href="" className="text-sm font-medium">
                 Free Trial
               </a>
+            </button>
+
+            {/* Hamburger for Tablet */}
+            <button onClick={() => setShowMenu(!showMenu)} className="ml-2">
+              {showMenu ? (
+                <HiOutlineX size={24} />
+              ) : (
+                <HiOutlineMenu size={24} />
+              )}
             </button>
           </div>
 
@@ -84,12 +93,12 @@ const Navbar = () => {
             </button>
 
             <div className="flex gap-2">
-              <button className="flex items-center justify-center px-4 py-2 w-[92px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
+              <button className="flex items-center justify-center px-4 py-2 w-[89px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
                 <a href="" className="text-sm font-medium">
                   Buy Now
                 </a>
               </button>
-              <button className="flex items-center justify-center px-4 py-2 w-[94px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black">
+              <button className="flex items-center justify-center px-4 py-2 w-[91px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black">
                 <a href="" className="text-sm font-medium">
                   Free Trial
                 </a>
@@ -104,10 +113,14 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* -------- Hamburger (below lg) -------- */}
-          <div className="flex-shrink-0 ml-6 flex items-center lg:hidden">
+          {/* -------- Hamburger only Mobile (<745px) -------- */}
+          <div className="flex-shrink-0 ml-6 flex items-center max-[744px]:flex min-[745px]:hidden">
             <button onClick={() => setShowMenu(!showMenu)}>
-              {showMenu ? <HiOutlineX size={28} /> : <HiOutlineMenu size={28} />}
+              {showMenu ? (
+                <HiOutlineX size={24} />
+              ) : (
+                <HiOutlineMenu size={24} />
+              )}
             </button>
           </div>
         </div>
@@ -169,7 +182,7 @@ const Navbar = () => {
             RAD Studio
           </a>
         </div>
-        <div className="questions z-57 flex gap-1 flex-wrap items-center justify-center px-4 md:px-0">
+        <div className="questions z-57 flex gap-1 flex-wrap items-center justify-center  md:px-0">
           <a
             href="#"
             className="group relative text-sm leading-none overflow-hidden"
