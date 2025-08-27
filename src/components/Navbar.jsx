@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* -------- Tablet View (745px - 1023px) -------- */}
           <div className="hidden min-[745px]:flex lg:hidden items-center gap-2 ml-auto px-4 py-2">
             {/* Sign In */}
-            <button className="p-2 group">
+            <button className=" group">
               <a href="" className="relative inline-block sm:text-[16px]">
                 Sign In
                 <span className="absolute left-0 bottom-[1px] h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
@@ -93,12 +93,12 @@ const Navbar = () => {
             </button>
 
             <div className="flex gap-2">
-              <button className="flex items-center justify-center px-4 py-2 w-[89px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
+              <button className="flex items-center justify-center  w-[89px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
                 <a href="" className="text-sm font-medium">
                   Buy Now
                 </a>
               </button>
-              <button className="flex items-center justify-center px-4 py-2 w-[91px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black">
+              <button className="flex items-center justify-center  w-[91px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black">
                 <a href="" className="text-sm font-medium">
                   Free Trial
                 </a>
@@ -153,10 +153,10 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex flex-col gap-2 mt-2 sm:hidden">
-            <button className="p-2">
+            <button className="">
               <a href="">Sign In</a>
             </button>
-            <button className="border p-2 rounded-lg">
+            <button className="border rounded-lg">
               <a href="">Buy Now</a>
             </button>
           </div>

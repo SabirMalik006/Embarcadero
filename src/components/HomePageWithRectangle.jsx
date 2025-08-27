@@ -20,7 +20,7 @@ const HomePageWithRectangle = () => {
 
       <div
         className="hidden sm:block 2xl:hidden absolute w-[800px] h-[490px] 
-                   bg-gradient-to-r from-[#bbe0f8e1] via-[#e2eeee] to-[#f6fafa]
+                   bg-gradient-to-r from-[#bbe0f8e1] via-[#e2eeee] to-[#ffffff]
                    left-0 -top-28 sm:-top-29 md:-top-20 opacity-80"
         style={{
           borderTopRightRadius: "250px",
@@ -59,17 +59,17 @@ const HomePageWithRectangle = () => {
 
       {/* Buttons Section */}
       <div className="flex flex-col sm:flex-row justify-center items-center mt-6 gap-2 px-4 sm:px-0 ">
-        <button className="bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 transition-colors duration-300 hover:bg-white hover:text-black hover:border hover:border-black">
+        <button className="bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 transition-colors duration-300 hover:bg-white hover:text-black hover:border hover:border-black cursor-pointer">
           <a href="">Start Your Free Trial</a>
         </button>
 
-        <button className="border border-black px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-62 transition-colors duration-300 hover:bg-black hover:text-white">
+        <button className="border border-black px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-62 transition-colors duration-300 hover:bg-black hover:text-white cursor-pointer">
           <a href="">Request a Product Demo</a>
         </button>
       </div>
 
       {/* Rectangle Section */}
-      <div className="relative mt-[80px] xl:mt-[128px] px-4 sm:px-6 lg:px-20 xl:px-0">
+      <div className="relative mt-[80px]  xl:px-[80.5px] 2xl:px-0 xl:mt-[128px] px-4 sm:px-6 lg:px-20 ">
         {/* Main Image */}
         <div className="flex justify-center relative w-full">
           <img
@@ -86,7 +86,7 @@ const HomePageWithRectangle = () => {
         </div>
 
         {/* Resource Section */}
-        <div className="flex justify-center xl:px-[80.5px] 2xl:px-[313px]">
+        <div className="flex justify-center  2xl:px-[313px]">
           <div
             className="flex flex-col sm:flex-row justify-between items-center 
                        mt-12 sm:px-8 xl:py-6 xl:px-8 bg-amber-500  py-4 w-full  md:max-w-[1024px] xl:max-w-[1440px] 2xl:max-w-[1920px] gap-4 rounded-2xl"

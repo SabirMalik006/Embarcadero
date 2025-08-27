@@ -49,7 +49,7 @@ function CustomContentList({ data }) {
 
             {/* Last line with icon */}
             <p className="text-sm text-[18px] 2xl:text-lg inline-flex items-center gap-2 mt-2">
-              <span className="inline border-b border-gray-400">
+              <span className="inline border-b border-gray-400 cursor-pointer">
                 {item.lastText}
               </span>
               <IoCloudDownloadOutline className="w-8 h-7 sm:w-8 sm:h-8 " />
