@@ -45,8 +45,8 @@ const Global = () => {
               </div>
 
               {/* For below XL but SM and above (single line) */}
-              <div className="hidden sm:flex xl:hidden flex-col items-start   pl-8">
-                <h3 className="text-2xl sm:text-[32px] lg:text-4xl font-medium bg-gradient-to-r from-red-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text tracking-wide">
+              <div className="hidden sm:flex xl:hidden flex-col items-start   ">
+                <h3 className="text-2xl sm:text-[36px] lg:text-4xl font-medium bg-gradient-to-r from-red-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text tracking-wide">
                   <span className="text-black">Join Our</span> Global Developer
                   Community
                 </h3>

@@ -41,7 +41,7 @@ function TabsSection({ tabsData }) {
       <div className="w-full flex justify-center mt-12 mb-10  ">
         <div className="w-full max-w-5xl xl:max-w-[1440px] px-[16px] sm:px-[24.5px] xl:px-[80px] 2xl:max-w-[1920px] z-10 2xl:px-[192px]  ">
           {/* Tabs */}
-          <div className="flex border border-gray-300 rounded-[12px] overflow-hidden p-2">
+          <div className="flex border border-[#E5E5E5] rounded-[12px] overflow-hidden p-2">
             {visibleTabs.map((tab) => (
               <button
                 key={tab}
