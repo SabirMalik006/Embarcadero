@@ -20,7 +20,7 @@ const HomePageWithRectangle = () => {
 
       <div
         className="hidden sm:block 2xl:hidden absolute w-[800px] h-[490px] 
-                   bg-gradient-to-r from-[#bbe0f8e1] via-[#e2eeee] to-[#ffffff]
+                   bg-gradient-to-r from-[#cad7e0e1] via-[#e2eeee] to-[#ffffff]
                    left-0 -top-28 sm:-top-29 md:-top-20 opacity-80"
         style={{
           borderTopRightRadius: "250px",
@@ -37,7 +37,7 @@ const HomePageWithRectangle = () => {
       <div
         className="absolute hidden sm:block -top-10 right-0 
                    w-[600px] h-[1400px] sm:w-[350px] sm:h-[970px] md:w-[600px] md:h-[1400px]
-                   bg-red-200 opacity-70 blur-3xl 
+                   bg-red-100 opacity-70 blur-3xl 
                    rounded-l-full"
       ></div>
 
