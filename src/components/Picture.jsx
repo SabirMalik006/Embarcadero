@@ -11,10 +11,11 @@ const Picture = () => {
     >
       {/* Background Decorations */}
       <img
-        className=" absolute xl:right-0 xl:bottom-0 2xl:h-[400px] 2xl:w-[400px] xl:h-[450px] xl:w-[350px]  sm:block sm:h-[450px]  sm:w-[300px] sm:right-[-25px] sm:bottom-[-110px] h-[580px] w-[250px] right-[-25px] top-[10px] "
+        className="absolute xl:right-0 xl:bottom-0 2xl:h-[400px] 2xl:w-[400px] xl:h-[450px] xl:w-[350px] sm:block sm:h-[450px] sm:w-[300px] sm:right-[-25px] sm:bottom-[-110px] h-[480px] w-[200px] right-[-25px] top-auto  "
         src="./image/secondVector.svg"
         alt="Background Right"
       />
+
       <img
         className="absolute xl:left-0 xl:bottom-0 2xl:h-[520px] 2xl:w-[480px]  xs:block xl:h-[555px] xl:w-[320px]  sm:h-[510px]  sm:w-[440px] sm:left-[-245px]  h-[580px] w-[350px] left-[-255px] "
         src="./image/firstVector.svg"
@@ -68,7 +69,7 @@ const Picture = () => {
 
       {/* Button */}
       <button
-  className="
+        className="
     relative z-10 
     flex flex-row items-start justify-center
     px-6 py-3 gap-2 sm:w-40 w-[343px] h-12
@@ -78,10 +79,9 @@ const Picture = () => {
     hover:bg-white hover:text-black 
     cursor-pointer
   "
->
-  Download Now
-</button>
-
+      >
+        Download Now
+      </button>
     </div>
   );
 };
