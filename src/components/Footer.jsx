@@ -4,166 +4,168 @@ const Footer = () => {
   return (
     <footer className="w-full">
       {/* Top Section */}
-      <div className="max-w-[1920px] mx-auto py-10 px-10">
+      <div className="max-w-[1920px] mx-auto py-10 sm:px-6 xl:px-[80px]">
         <div
           className="
-            flex flex-col items-left items-start justify-center text-center 
-            sm:items-start sm:text-left lg:flex-row lg:justify-between lg:items-start lg:text-left
-            xl:flex-col xl:items-start xl:text-left
-            2xl:flex-row 2xl:text-left
-            gap-10 2xl:px-40 
+            flex flex-col items-center text-center 
+            sm:items-start sm:text-left 
+            lg:flex-row lg:justify-between lg:items-start
+            xl:flex-col xl:items-start 
+            2xl:flex-row
+            gap-10 lg:gap-12 xl:gap-16 2xl:gap-20
           "
         >
           {/* Logo */}
           <div
             className="
-              flex justify-center  lg:justify-start
-              xl:justify-start xl:mb-6
+              flex justify-center lg:justify-start 
+              xl:justify-start xl:mb-6 
             "
           >
             <img
               src="./image/image 1.png"
               alt="Logo"
-              className="w-[202px] h-[35px] sm:w-[150px] md:w-[202px]  object-contain cursor-pointer"
+              className="w-[180px] h-auto sm:w-[150px] md:w-[202px] 2xl:w-[255px] object-contain cursor-pointer"
             />
           </div>
 
           {/* Links Section */}
           <div
             className="
-    grid gap-[16px] sm:gap-[25px] xl:gap-[70.8px] grid-cols-2 sm:grid-cols-3 lg:grid-cols-6   
-    text-center sm:text-left 2xl:ml-30
-    
-  "
+              grid gap-8 sm:gap-10 md:gap-12 lg:gap-6 xl:gap-12
+              grid-cols-2 sm:grid-cols-3 lg:grid-cols-6
+              text-center sm:text-left 2xl:ml-[80px]
+              w-full
+            "
           >
             {/* Products */}
-            <ul className="flex flex-col gap-4 items-start justify-start">
-              <li className="font-bold text-[20px]  sm:text-[20px] md:text-lg xl:text-xl text-gray-800">
+            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
+              <li className="font-bold text-lg sm:text-[20px] md:text-lg xl:text-xl  text-gray-800">
                 Products
               </li>
-              <li className=" sm-text-[16px] xl:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] xl:text-base text-[#4B5563]">
                 <a href="">RAD Studio</a>
               </li>
-              <li className=" sm-text-[16px] xl:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] xl:text-base text-[#4B5563]">
                 <a href="">Delphi</a>
               </li>
-              <li className=" sm-text-[16px] xl:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] xl:text-base text-[#4B5563]">
                 <a href="">C++ Builder</a>
               </li>
-              <li className=" sm-text-[16px] xl:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] xl:text-base text-[#4B5563]">
                 <a href="">InterBase</a>
               </li>
-              <li className=" sm-text-[16px] xl:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] xl:text-base text-[#4B5563]">
                 <a href="">RAD Server</a>
               </li>
             </ul>
 
             {/* Free Tools */}
-            <ul className="flex flex-col gap-4 items-start justify-start">
-              <li className="font-bold text-[20px]  sm:text-[20px] md:text-lg text-gray-800">
-                <a href="">Free Tools</a>
+            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
+              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+                Free Tools
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">C++ Compiler</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">C++ Builder Community ED</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Delphi Community ED</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">REST Debugger</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Interbase Developer Edition</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">FMX Stencils</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">DEV-C++</a>
               </li>
             </ul>
 
             {/* Resources */}
-            <ul className="flex flex-col gap-6 items-start justify-start">
-              <li className="font-bold text-[20px]  sm:text-[20px] md:text-lg text-gray-800">
-                <a href="">Resources</a>
+            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
+              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+                Resources
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Events & Webinars</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">White Papers</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Success Stories</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">For Educators</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Partners</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Certifications</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">MVP Program</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 Web App Development
               </li>
             </ul>
 
             {/* Community */}
-            <ul className="flex flex-col gap-4 items-start justify-start">
-              <li className="font-bold text-[20px]  sm:text-[20px] md:text-lg text-gray-800">
-                <a href="">Community</a>
+            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
+              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+                Community
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Blogs</a>
               </li>
             </ul>
 
             {/* Company */}
-            <ul className="flex flex-col gap-4 items-start justify-start">
-              <li className="font-bold text-[20px]  sm:text-[20px] md:text-lg text-gray-800">
-                <a href="">Company</a>
+            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
+              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+                Company
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">About Us</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Contact Us</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Contact Sales</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Legal</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Privacy Policy</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">Logo</a>
               </li>
             </ul>
 
             {/* Get in Touch */}
-            <ul className="flex flex-col gap-4 items-start justify-start">
-              <li className="font-bold text-[20px]  sm:text-[20px] md:text-lg text-gray-800">
-                <a href="">Get in Touch</a>
+            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
+              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+                Get in Touch
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">US: (512)226-8080</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">DE: 49(0)6103-3866-100</a>
               </li>
-              <li className=" sm-text-[16px] md:text-base text-[#4B5563]">
+              <li className="sm:text-[16px] md:text-base text-[#4B5563]">
                 <a href="">info@embarcadero.com</a>
               </li>
             </ul>
@@ -172,7 +174,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="w-full">
+      <div className="w-full border-t border-gray-200">
         <div
           className="max-w-[1920px] mx-4 sm:mx-6 xl:mx-20 py-4 
                   flex flex-col-reverse sm:flex-row 
@@ -187,22 +189,22 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-6 justify-center">
             <img
-              src="./image/twitter.png"
+              src="./image/x.svg"
               alt="Twitter"
               className="w-6 h-6 cursor-pointer"
             />
             <img
-              src="./image/face.png"
+              src="./image/f.svg"
               alt="Facebook"
               className="w-6 h-6 cursor-pointer"
             />
             <img
-              src="./image/ball.png"
+              src="./image/newBall.svg"
               alt="Dribbble"
               className="w-6 h-6 cursor-pointer"
             />
             <img
-              src="./image/github.png"
+              src="./image/g.svg"
               alt="GitHub"
               className="w-6 h-6 cursor-pointer"
             />

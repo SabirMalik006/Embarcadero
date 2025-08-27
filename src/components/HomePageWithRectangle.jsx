@@ -59,11 +59,14 @@ const HomePageWithRectangle = () => {
 
       {/* Buttons Section */}
       <div className="flex flex-col sm:flex-row justify-center items-center mt-6 gap-2 px-4 sm:px-0 ">
-        <button className="bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 transition-colors duration-300 hover:bg-white hover:text-black hover:border hover:border-black cursor-pointer">
+        <button
+          className="bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 
+  transition-all duration-500 ease-in-out transform hover:opacity-70 hover:scale-105 cursor-pointer"
+        >
           <a href="">Start Your Free Trial</a>
         </button>
 
-        <button className="border border-black px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-62 transition-colors duration-300 hover:bg-black hover:text-white cursor-pointer">
+        <button className="border border-black px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto  z-62 transition-colors duration-300 hover:bg-black hover:text-white cursor-pointer">
           <a href="">Request a Product Demo</a>
         </button>
       </div>
@@ -112,13 +115,14 @@ const HomePageWithRectangle = () => {
             <div className="flex-shrink-0 w-full sm:w-auto px-4 sm:px-0">
               <button
                 className="flex justify-center items-center 
-               px-[25px] py-[12px] 
-               w-full sm:w-[167px] h-[43px] 
-               bg-[#262626] shadow-[0px_4px_32px_rgba(255,94,101,0.1)] 
-               rounded-[12px] 
-               text-white text-center 
-               cursor-pointer transition-colors duration-300 
-               hover:bg-white hover:text-black"
+  px-[25px] py-[12px] 
+  w-full sm:w-[167px] h-[43px] 
+  bg-[#262626] shadow-[0px_4px_32px_rgba(255,94,101,0.1)] 
+  rounded-[12px] 
+  text-white text-center 
+  cursor-pointer 
+  transition-all duration-300 ease-in-out 
+  hover:bg-black hover:text-white hover:scale-105 hover:opacity-70"
               >
                 View Resources
               </button>

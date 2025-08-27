@@ -60,14 +60,14 @@ const Navbar = () => {
             </button>
 
             {/* Buy Now */}
-            <button className="flex items-center justify-center  w-[89px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-[14px] transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
+            <button className="flex items-center justify-center  w-[89px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-[14px] transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white cursor-pointer">
               <a href="" className="text-sm font-medium">
                 Buy Now
               </a>
             </button>
 
             {/* Free Trial */}
-            <button className="flex items-center justify-center  w-[91px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-[14px] transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black">
+            <button className="flex items-center justify-center  w-[91px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-[14px] transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black cursor-pointer">
               <a href="" className="text-sm font-medium">
                 Free Trial
               </a>
@@ -93,12 +93,12 @@ const Navbar = () => {
             </button>
 
             <div className="flex gap-2">
-              <button className="flex items-center justify-center  w-[89px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
+              <button className="flex items-center justify-center  w-[89px] h-[38px] border border-[#262626] rounded-lg bg-white text-black font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white cursor-pointer">
                 <a href="" className="text-sm font-medium">
                   Buy Now
                 </a>
               </button>
-              <button className="flex items-center justify-center  w-[91px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black">
+              <button className="flex items-center justify-center w-[91px] h-[38px] border border-black rounded-lg bg-black text-white font-medium text-sm transition-transform duration-300 ease-in-out hover:scale-102 hover:opacity-60 cursor-pointer">
                 <a href="" className="text-sm font-medium">
                   Free Trial
                 </a>
