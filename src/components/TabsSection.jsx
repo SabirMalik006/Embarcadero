@@ -5,9 +5,15 @@ function TabsSection({ tabsData }) {
   const tabNames = useMemo(() => Object.keys(tabsData), [tabsData]);
 
   const getTabsForWidth = (width) => {
-    if (width < 640) return tabNames.slice(0, 3); // mobile (<sm)
-    return tabNames.slice(0, 6); // sm+ screens
+    if (width >= 1280) {
+      return tabNames.slice(0, 7); // xl+ screens
+    } else if (width >= 640) {
+      return tabNames.slice(0, 6); // sm to lg screens
+    } else {
+      return tabNames.slice(0, 3); // mobile (<sm)
+    }
   };
+  
   const [visibleTabs, setVisibleTabs] = useState(() =>
     getTabsForWidth(window.innerWidth)
   );
@@ -48,7 +54,7 @@ function TabsSection({ tabsData }) {
             whitespace-nowrap
             ${
               activeTab === tab
-                ? "bg-black text-white rounded-xl"
+                ? "bg-[#262626] text-white rounded-xl"
                 : "bg-transparent text-gray-600"
             }
           `}
