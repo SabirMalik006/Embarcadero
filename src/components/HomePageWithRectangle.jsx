@@ -6,7 +6,7 @@ const HomePageWithRectangle = () => {
       {/* Bubble on left side */}
       <div
         className="hidden 2xl:block absolute w-[700px] h-[420px] 
-                   bg-gradient-to-r from-[#cfe6f5e1] via-[#e4f0f0] to-[#ffffff] 
+                   bg-gradient-to-r from-[#edf0f1] via-[#edf7f7] to-[#ffffff]
                    left-0 opacity-80"
         style={{
           borderTopRightRadius: "250px",
@@ -20,7 +20,7 @@ const HomePageWithRectangle = () => {
 
       <div
         className="hidden sm:block 2xl:hidden absolute w-[800px] h-[490px] 
-                   bg-gradient-to-r from-[#cad7e0e1] via-[#e2eeee] to-[#ffffff]
+                   bg-gradient-to-r from-[#edf0f1] via-[#edf7f7] to-[#ffffff]
                    left-0 -top-28 sm:-top-29 md:-top-20 opacity-80"
         style={{
           borderTopRightRadius: "250px",
