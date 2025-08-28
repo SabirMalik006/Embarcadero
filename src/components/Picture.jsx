@@ -6,25 +6,35 @@ const Picture = () => {
       className="flex flex-col justify-center items-center mt-[80px] px-[40px] py-26 text-center max-w-8xl mx-auto  relative overflow-hidden"
       style={{
         background:
-          "linear-gradient(to right, #EDEEF8 0%, #EEF6F7 50%, #F5F5FA 100%)",
+          "linear-gradient(to right, #ECECF8 0%, #F6F9F9 50%, #ECF6F8 100%)",
       }}
     >
       {/* Background Decorations */}
       <img
-        className="absolute xl:right-0 xl:bottom-0 2xl:h-[400px] 2xl:w-[400px] xl:h-[450px] xl:w-[350px] sm:block sm:h-[450px] sm:w-[300px] sm:right-[-25px] sm:bottom-[-110px] h-[480px] w-[200px] right-[-25px] top-auto  "
-        src="./image/secondVector.svg"
-        alt="Background Right"
+        className="absolute 
+             2xl:h-[703px] 2xl:w-[1000px] 
+             xl:h-[700px] xl:w-[1014px] 
+             sm:w-[662px] sm:h-auto 
+             sm:left-[-533px] sm:top-[3px] 
+             left-[-300px]  
+                          block"
+        src="./image/fullVector1.svg"
+        alt="Background Left"
       />
 
       <img
-        className="absolute xl:left-0 xl:bottom-0 2xl:h-[520px] 2xl:w-[480px]  xs:block xl:h-[555px] xl:w-[320px]  sm:h-[510px]  sm:w-[440px] sm:left-[-245px]  h-[580px] w-[350px] left-[-255px] "
-        src="./image/firstVector.svg"
-        alt="Background Left"
+        className="absolute 
+             2xl:h-[1430px] 2xl:w-[822px] 2xl:right-[-410px] 2xl:top-[-239px] 
+             xl:w-[850px] xl:h-[700px] xl:right-[-410px] xl:top-[150px] 
+             sm:w-[850px] sm:h-[700px] sm:right-[-446px] sm:top-[150px] 
+             w-[865px] right-[-218px] top-[325px] block"
+        src="./image/v.svg"
+        alt="Background Right"
       />
 
       {/* Heading */}
       <div className="mb-8 relative z-10">
-        <h2 className="text-[32px] sm:text-[40px] xl:text-5xl font-semibold xl:font-bold leading-snug whitespace-nowrap">
+        <h2 className="text-[32px] sm:text-[40px] xl:text-[48px] font-semibold xl:font-bold leading-snug whitespace-nowrap">
           Get RAD{" "}
           <span
             className="bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
@@ -70,14 +80,9 @@ const Picture = () => {
       {/* Button */}
       <button
         className="
-    relative z-10 
-    flex flex-row items-start justify-center
-    px-6 py-3 gap-2 sm:w-40 w-[343px] h-12
-    mt-8 text-sm sm:text-base font-medium
-    bg-[#171717] text-white border border-[#171717]
-    rounded-xl transition-colors duration-300
-    hover:bg-white hover:text-black 
-    cursor-pointer
+        mt-8
+        bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 
+        transition-all duration-500 ease-in-out transform hover:opacity-70 hover:scale-105 cursor-pointer
   "
       >
         Download Now

@@ -2,7 +2,7 @@ import Card from "./Card";
 import React from "react";
 
 function CardList({ data }) {
-  // Utility to chunk array into groups
+
   const chunkArray = (arr, size) => {
     return arr.reduce((acc, _, i) => {
       if (i % size === 0) acc.push(arr.slice(i, i + size));
@@ -10,13 +10,12 @@ function CardList({ data }) {
     }, []);
   };
 
-  // Responsive breakpoints: handle with Tailwind hidden + maps
-  // Responsive breakpoints: handle with Tailwind hidden + maps
+ 
 const renderCards = (chunkSize, onlyFirstRowLine = false) => {
   const chunks = chunkArray(data, chunkSize);
 
   return chunks.map((group, rowIndex) => (
-    <div key={rowIndex} className="w-full 2xl:px-48 xl:px-20 px-6.25">
+    <div key={rowIndex} className="w-full 2xl:px-48 xl:px-20 px-4">
       {/* Row of cards */}
       <div
         className={`
@@ -52,13 +51,13 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
       <div
         className="absolute hidden xl:block left-0 xl:left-10   bottom-0 
   w-[500px] h-[400px]  
-  bg-blue-100/40 opacity-70 blur-3xl 
+  bg-blue-100 opacity-70 blur-3xl 
   rounded-xl"
       ></div>
       <div
-        className="absolute hidden xl:block right-17 top-0 
+        className="absolute hidden xl:block right-5 top-0 
   w-[500px] h-[400px]  
-  bg-blue-100/40 opacity-70 blur-3xl 
+  bg-blue-100 opacity-70 blur-3xl 
   rounded-xl"
       ></div>
       {/* Heading */}
@@ -73,7 +72,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
           </span>
         </p>
         <img
-          className="hidden lg:block w-10 sm:w-12 2xl:w-[108px] z-51"
+          className="hidden lg:block w-10 sm:w-12 xl:w-[90px] z-51"
           src="./image/Group 39868.png"
           alt="Arrow Icon"
         />

@@ -4,7 +4,7 @@ import React from "react";
 function Box({ name, des, image }) {
   return (
     <div className="rounded-lg py-1 w-full">
-      {/* Mobile-first: center aligned, larger screens: left aligned */}
+  
       <div className="flex flex-col gap-4 items-center text-center sm:items-start sm:text-left">
         <img
           src={image}

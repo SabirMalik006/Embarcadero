@@ -14,316 +14,258 @@ const App = () => {
     {
       name: "Windows 11",
       des: "Modernize VCL apps for Windows 11 with up-to-date user interface controls, WinRT APIs, and HighDPI-related features",
-      image:
-        "./image/microsoft.png",
+      image: "./image/microsoft.png",
     },
     {
       name: "User Experience",
       des: "Completely rebuilt Welcome Page with a native look and feel, and a UI that fits the IDE, and customizable layout and content.",
-      image:
-        "./image/user.png",
+      image: "./image/user.png",
     },
     {
       name: "Android",
       des: "Support for the latest Android Level 32 API and latest Billing APIs, and migration to use the AndroidX libraries. Android support for multiple classes.",
-      image:
-        "./image/android.png",
+      image: "./image/android.png",
     },
     {
       name: "Single Code Base",
       des: "Create apps for all major platforms with less coding effort. Write once, compile everywhere..",
-      image:
-        "./image/window.png",
+      image: "./image/window.png",
     },
     {
       name: "Productivity",
       des: "VCL Styles with design-time support: Prototype stylish UIs even faster by seeing immediately at design-time how your styled forms and controls will look when running..",
-      image:
-        "./image/productivity.png",
+      image: "./image/productivity.png",
     },
     {
       name: "Linux",
       des: "Develop both server and FireMonkey GUI applications for Linux. Delphi now has LLDB version 12 support for debugging on Linux, also adopted for iOS Simulator.",
-      image:
-        "./image/linux.png",
+      image: "./image/linux.png",
     },
     {
       name: "Single Code Base",
       des: "Create apps for all major platforms with less coding effort. Write once, compile everywhere..",
-      image:
-        "./image/window.png",
+      image: "./image/window.png",
     },
     {
       name: "Productivity",
       des: "VCL Styles with design-time support: Prototype stylish UIs even faster by seeing immediately at design-time how your styled forms and controls will look when running..",
-      image:
-        "./image/productivity.png",
+      image: "./image/productivity.png",
     },
     {
       name: "Linux",
       des: "Develop both server and FireMonkey GUI applications for Linux. Delphi now has LLDB version 12 support for debugging on Linux, also adopted for iOS Simulator.",
-      image:
-        "./image/linux.png",
+      image: "./image/linux.png",
     },
     {
       name: "Windows 11",
       des: "Modernize VCL apps for Windows 11 with up-to-date user interface controls, WinRT APIs, and HighDPI-related features",
-      image:
-        "./image/microsoft.png",
+      image: "./image/microsoft.png",
     },
     {
       name: "User Experience",
       des: "Completely rebuilt Welcome Page with a native look and feel, and a UI that fits the IDE, and customizable layout and content.",
-      image:
-        "./image/user.png",
+      image: "./image/user.png",
     },
     {
       name: "Android",
       des: "Support for the latest Android Level 32 API and latest Billing APIs, and migration to use the AndroidX libraries. Android support for multiple classes.",
-      image:
-        "./image/android.png",
+      image: "./image/android.png",
     },
-  {
-    name: "Cloud Sync",
-    des: "Seamlessly sync your data across all devices with real-time updates.",
-    image: "https://img.icons8.com/ios-filled/48/cloud.png",
-  },
-  {
-    name: "Dark Mode",
-    des: "Switch to dark mode for better eye comfort during night usage.",
-    image: "https://img.icons8.com/ios-filled/48/moon-symbol.png",
-  },
-  {
-    name: "Analytics",
-    des: "Get insights into app usage and performance through advanced analytics.",
-    image: "https://img.icons8.com/ios-filled/48/combo-chart.png",
-  },
-  {
-    name: "Notifications",
-    des: "Receive timely notifications to stay up-to-date with app activities.",
-    image: "https://img.icons8.com/ios-filled/48/appointment-reminders.png",
-  },
-  {
-    name: "Multi-Language",
-    des: "Use the app in multiple languages to reach a wider audience.",
-    image: "https://img.icons8.com/ios-filled/48/language.png",
-  },
-  {
-    name: "Offline Mode",
-    des: "Access core features without an internet connection anytime.",
-    image: "https://img.icons8.com/ios-filled/48/no-wifi.png",
-  },
-  {
-    name: "Security",
-    des: "Advanced security features protect your data with encryption.",
-    image: "https://img.icons8.com/ios-filled/48/lock.png",
-  },
-  {
-    name: "Collaboration",
-    des: "Work together with your team in real-time efficiently.",
-    image: "https://img.icons8.com/ios-filled/48/conference-call.png",
-  },
-  {
-    name: "Customization",
-    des: "Tailor the app experience to your personal preferences.",
-    image: "https://img.icons8.com/ios-filled/48/settings.png",
-  },
-  {
-    name: "AI Assistance",
-    des: "Get smart suggestions and assistance powered by AI.",
-    image: "https://img.icons8.com/ios-filled/48/artificial-intelligence.png",
-  },
-  {
-    name: "File Sharing",
-    des: "Easily share files and documents with colleagues or friends.",
-    image: "https://img.icons8.com/ios-filled/48/share.png",
-  },
-  {
-    name: "Voice Commands",
-    des: "Control the app using voice commands for hands-free operation.",
-    image: "https://img.icons8.com/ios-filled/48/voice-command.png",
-  },
-  {
-    name: "Calendar Integration",
-    des: "Sync with your calendar to manage tasks and events.",
-    image: "https://img.icons8.com/ios-filled/48/calendar.png",
-  },
-  {
-    name: "Tasks Management",
-    des: "Organize and prioritize your tasks efficiently.",
-    image: "https://img.icons8.com/ios-filled/48/checklist.png",
-  },
-  {
-    name: "Real-time Chat",
-    des: "Instant messaging feature for seamless communication.",
-    image: "https://img.icons8.com/ios-filled/48/chat.png",
-  },
-  {
-    name: "Data Export",
-    des: "Export your reports and data in multiple formats.",
-    image: "https://img.icons8.com/ios-filled/48/export.png",
-  },
-  {
-    name: "Multi-Device Support",
-    des: "Use the app across multiple devices without losing progress.",
-    image: "https://img.icons8.com/ios-filled/48/device.png",
-  },
-  {
-    name: "Custom Alerts",
-    des: "Set personalized alerts and reminders for important events.",
-    image: "https://img.icons8.com/ios-filled/48/alarm.png",
-  },
-  {
-    name: "Integration API",
-    des: "Connect with third-party apps using our robust API.",
-    image: "https://img.icons8.com/ios-filled/48/api.png",
-  },
-  {
-    name: "Performance Metrics",
-    des: "Track app performance and optimize your workflow.",
-    image: "https://img.icons8.com/ios-filled/48/speed.png",
-  },
-  {
-    name: "Version History",
-    des: "Keep track of changes and revert to previous versions anytime.",
-    image: "https://img.icons8.com/ios-filled/48/history.png",
-  },
-  {
-    name: "Backup & Restore",
-    des: "Easily backup your data and restore it whenever needed.",
-    image: "https://img.icons8.com/ios-filled/48/backup.png",
-  },
-  {
-    name: "Geolocation",
-    des: "Use location-based features for enhanced functionality.",
-    image: "https://img.icons8.com/ios-filled/48/marker.png",
-  },
-  {
-    name: "Support",
-    des: "24/7 customer support to resolve all your queries quickly.",
-    image: "https://img.icons8.com/ios-filled/48/customer-support.png",
-  },
-  {
-    name: "Cloud Sync",
-    des: "Seamlessly sync your data across all devices with real-time updates.",
-    image: "https://img.icons8.com/ios-filled/48/cloud.png",
-  },
-  {
-    name: "Dark Mode",
-    des: "Switch to dark mode for better eye comfort during night usage.",
-    image: "https://img.icons8.com/ios-filled/48/moon-symbol.png",
-  },
-  {
-    name: "Analytics",
-    des: "Get insights into app usage and performance through advanced analytics.",
-    image: "https://img.icons8.com/ios-filled/48/combo-chart.png",
-  },
-  {
-    name: "Notifications",
-    des: "Receive timely notifications to stay up-to-date with app activities.",
-    image: "https://img.icons8.com/ios-filled/48/appointment-reminders.png",
-  },
-  {
-    name: "Multi-Language",
-    des: "Use the app in multiple languages to reach a wider audience.",
-    image: "https://img.icons8.com/ios-filled/48/language.png",
-  },
-  {
-    name: "Offline Mode",
-    des: "Access core features without an internet connection anytime.",
-    image: "https://img.icons8.com/ios-filled/48/no-wifi.png",
-  },
-  {
-    name: "Security",
-    des: "Advanced security features protect your data with encryption.",
-    image: "https://img.icons8.com/ios-filled/48/lock.png",
-  },
-  {
-    name: "Collaboration",
-    des: "Work together with your team in real-time efficiently.",
-    image: "https://img.icons8.com/ios-filled/48/conference-call.png",
-  },
-  {
-    name: "Customization",
-    des: "Tailor the app experience to your personal preferences.",
-    image: "https://img.icons8.com/ios-filled/48/settings.png",
-  },
-  {
-    name: "AI Assistance",
-    des: "Get smart suggestions and assistance powered by AI.",
-    image: "https://img.icons8.com/ios-filled/48/artificial-intelligence.png",
-  },
-  {
-    name: "File Sharing",
-    des: "Easily share files and documents with colleagues or friends.",
-    image: "https://img.icons8.com/ios-filled/48/share.png",
-  },
-  {
-    name: "Voice Commands",
-    des: "Control the app using voice commands for hands-free operation.",
-    image: "https://img.icons8.com/ios-filled/48/voice-command.png",
-  },
-  {
-    name: "Calendar Integration",
-    des: "Sync with your calendar to manage tasks and events.",
-    image: "https://img.icons8.com/ios-filled/48/calendar.png",
-  },
-  {
-    name: "Tasks Management",
-    des: "Organize and prioritize your tasks efficiently.",
-    image: "https://img.icons8.com/ios-filled/48/checklist.png",
-  },
-  {
-    name: "Real-time Chat",
-    des: "Instant messaging feature for seamless communication.",
-    image: "https://img.icons8.com/ios-filled/48/chat.png",
-  },
-  {
-    name: "Data Export",
-    des: "Export your reports and data in multiple formats.",
-    image: "https://img.icons8.com/ios-filled/48/export.png",
-  },
-  {
-    name: "Multi-Device Support",
-    des: "Use the app across multiple devices without losing progress.",
-    image: "https://img.icons8.com/ios-filled/48/device.png",
-  },
-  {
-    name: "Custom Alerts",
-    des: "Set personalized alerts and reminders for important events.",
-    image: "https://img.icons8.com/ios-filled/48/alarm.png",
-  },
-  {
-    name: "Integration API",
-    des: "Connect with third-party apps using our robust API.",
-    image: "https://img.icons8.com/ios-filled/48/api.png",
-  },
-  {
-    name: "Performance Metrics",
-    des: "Track app performance and optimize your workflow.",
-    image: "https://img.icons8.com/ios-filled/48/speed.png",
-  },
-  {
-    name: "Version History",
-    des: "Keep track of changes and revert to previous versions anytime.",
-    image: "https://img.icons8.com/ios-filled/48/history.png",
-  },
-  {
-    name: "Backup & Restore",
-    des: "Easily backup your data and restore it whenever needed.",
-    image: "https://img.icons8.com/ios-filled/48/backup.png",
-  },
-  {
-    name: "Geolocation",
-    des: "Use location-based features for enhanced functionality.",
-    image: "https://img.icons8.com/ios-filled/48/marker.png",
-  },
-  {
-    name: "Support",
-    des: "24/7 customer support to resolve all your queries quickly.",
-    image: "https://img.icons8.com/ios-filled/48/customer-support.png",
-  },
-];
+    {
+      name: "Cloud Sync",
+      des: "Seamlessly sync your data across all devices with real-time updates.",
+      image: "https://img.icons8.com/ios-filled/48/cloud.png",
+    },
+    {
+      name: "Dark Mode",
+      des: "Switch to dark mode for better eye comfort during night usage.",
+      image: "https://img.icons8.com/ios-filled/48/moon-symbol.png",
+    },
+    {
+      name: "Analytics",
+      des: "Get insights into app usage and performance through advanced analytics.",
+      image: "https://img.icons8.com/ios-filled/48/combo-chart.png",
+    },
+    {
+      name: "Notifications",
+      des: "Receive timely notifications to stay up-to-date with app activities.",
+      image: "https://img.icons8.com/ios-filled/48/appointment-reminders.png",
+    },
+    {
+      name: "Multi-Language",
+      des: "Use the app in multiple languages to reach a wider audience.",
+      image: "https://img.icons8.com/ios-filled/48/language.png",
+    },
+    
+    {
+      name: "Security",
+      des: "Advanced security features protect your data with encryption.",
+      image: "https://img.icons8.com/ios-filled/48/lock.png",
+    },
+    {
+      name: "Collaboration",
+      des: "Work together with your team in real-time efficiently.",
+      image: "https://img.icons8.com/ios-filled/48/conference-call.png",
+    },
+    {
+      name: "Customization",
+      des: "Tailor the app experience to your personal preferences.",
+      image: "https://img.icons8.com/ios-filled/48/settings.png",
+    },
+    {
+      name: "AI Assistance",
+      des: "Get smart suggestions and assistance powered by AI.",
+      image: "https://img.icons8.com/ios-filled/48/artificial-intelligence.png",
+    },
+    {
+      name: "File Sharing",
+      des: "Easily share files and documents with colleagues or friends.",
+      image: "https://img.icons8.com/ios-filled/48/share.png",
+    },
+    
+    {
+      name: "Calendar Integration",
+      des: "Sync with your calendar to manage tasks and events.",
+      image: "https://img.icons8.com/ios-filled/48/calendar.png",
+    },
+    {
+      name: "Tasks Management",
+      des: "Organize and prioritize your tasks efficiently.",
+      image: "https://img.icons8.com/ios-filled/48/checklist.png",
+    },
+    {
+      name: "Real-time Chat",
+      des: "Instant messaging feature for seamless communication.",
+      image: "https://img.icons8.com/ios-filled/48/chat.png",
+    },
+    {
+      name: "Data Export",
+      des: "Export your reports and data in multiple formats.",
+      image: "https://img.icons8.com/ios-filled/48/export.png",
+    },
+    {
+      name: "Custom Alerts",
+      des: "Set personalized alerts and reminders for important events.",
+      image: "https://img.icons8.com/ios-filled/48/alarm.png",
+    },
+    {
+      name: "Integration API",
+      des: "Connect with third-party apps using our robust API.",
+      image: "https://img.icons8.com/ios-filled/48/api.png",
+    },
+    {
+      name: "Performance Metrics",
+      des: "Track app performance and optimize your workflow.",
+      image: "https://img.icons8.com/ios-filled/48/speed.png",
+    },
+    {
+      name: "Geolocation",
+      des: "Use location-based features for enhanced functionality.",
+      image: "https://img.icons8.com/ios-filled/48/marker.png",
+    },
+    {
+      name: "Support",
+      des: "24/7 customer support to resolve all your queries quickly.",
+      image: "https://img.icons8.com/ios-filled/48/customer-support.png",
+    },
+    {
+      name: "Cloud Sync",
+      des: "Seamlessly sync your data across all devices with real-time updates.",
+      image: "https://img.icons8.com/ios-filled/48/cloud.png",
+    },
+    {
+      name: "Dark Mode",
+      des: "Switch to dark mode for better eye comfort during night usage.",
+      image: "https://img.icons8.com/ios-filled/48/moon-symbol.png",
+    },
+    {
+      name: "Analytics",
+      des: "Get insights into app usage and performance through advanced analytics.",
+      image: "https://img.icons8.com/ios-filled/48/combo-chart.png",
+    },
+    {
+      name: "Notifications",
+      des: "Receive timely notifications to stay up-to-date with app activities.",
+      image: "https://img.icons8.com/ios-filled/48/appointment-reminders.png",
+    },
+    {
+      name: "Multi-Language",
+      des: "Use the app in multiple languages to reach a wider audience.",
+      image: "https://img.icons8.com/ios-filled/48/language.png",
+    },
+    {
+      name: "Security",
+      des: "Advanced security features protect your data with encryption.",
+      image: "https://img.icons8.com/ios-filled/48/lock.png",
+    },
+    {
+      name: "Collaboration",
+      des: "Work together with your team in real-time efficiently.",
+      image: "https://img.icons8.com/ios-filled/48/conference-call.png",
+    },
+    {
+      name: "Customization",
+      des: "Tailor the app experience to your personal preferences.",
+      image: "https://img.icons8.com/ios-filled/48/settings.png",
+    },
+    {
+      name: "AI Assistance",
+      des: "Get smart suggestions and assistance powered by AI.",
+      image: "https://img.icons8.com/ios-filled/48/artificial-intelligence.png",
+    },
+    {
+      name: "File Sharing",
+      des: "Easily share files and documents with colleagues or friends.",
+      image: "https://img.icons8.com/ios-filled/48/share.png",
+    },
+    
+    {
+      name: "Calendar Integration",
+      des: "Sync with your calendar to manage tasks and events.",
+      image: "https://img.icons8.com/ios-filled/48/calendar.png",
+    },
+    {
+      name: "Tasks Management",
+      des: "Organize and prioritize your tasks efficiently.",
+      image: "https://img.icons8.com/ios-filled/48/checklist.png",
+    },
+    {
+      name: "Real-time Chat",
+      des: "Instant messaging feature for seamless communication.",
+      image: "https://img.icons8.com/ios-filled/48/chat.png",
+    },
+    {
+      name: "Data Export",
+      des: "Export your reports and data in multiple formats.",
+      image: "https://img.icons8.com/ios-filled/48/export.png",
+    },
+    {
+      name: "Custom Alerts",
+      des: "Set personalized alerts and reminders for important events.",
+      image: "https://img.icons8.com/ios-filled/48/alarm.png",
+    },
+    {
+      name: "Integration API",
+      des: "Connect with third-party apps using our robust API.",
+      image: "https://img.icons8.com/ios-filled/48/api.png",
+    },
+    {
+      name: "Performance Metrics",
+      des: "Track app performance and optimize your workflow.",
+      image: "https://img.icons8.com/ios-filled/48/speed.png",
+    },
+
+    {
+      name: "Geolocation",
+      des: "Use location-based features for enhanced functionality.",
+      image: "https://img.icons8.com/ios-filled/48/marker.png",
+    },
+    {
+      name: "Support",
+      des: "24/7 customer support to resolve all your queries quickly.",
+      image: "https://img.icons8.com/ios-filled/48/customer-support.png",
+    },
+  ];
 
   const BlogData = [
     {
@@ -347,8 +289,9 @@ const App = () => {
       end: "Read More ",
     },
     {
-        heading: "Learning & Development",
-      Title: "A Complete Guide To Programming In C++ – Object Oriented Programming",
+      heading: "Learning & Development",
+      Title:
+        "A Complete Guide To Programming In C++ – Object Oriented Programming",
       end: "Read More ",
     },
     {
@@ -368,7 +311,7 @@ const App = () => {
           "VCL library improved for use of Microsoft’s WebView 2 control in both TEdgeBrowser and TWebBrowser components, with better support for UserDataFolder and ExecutableFolder configurations.",
           "Use VCL Styles at design time! Prototype stylish UIs even faster by seeing immediately at design-time how your styled forms and controls will look when running.",
           "FireMonkey design-time guidelines: Prototype faster with visual lines and enhanced margin and padding support.",
-          "Improved TPathData processing and rendering in FireMonkey library, including quadratic Bézier curve commands and other transformations."
+          "Improved TPathData processing and rendering in FireMonkey library, including quadratic Bézier curve commands and other transformations.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
       },
@@ -383,10 +326,10 @@ const App = () => {
           "Use Code Insight™ for code completion via a modern Language Server Protocol based on your code while libraries help you code quickly and accurately.",
           "Get hints and tips from inline documentation as you code.",
           "Keep development agile with the VCL designer, Agile refactoring and Live Templates.",
-          "Integrate with version control systems including Git, Subversion and Mercurial."
+          "Integrate with version control systems including Git, Subversion and Mercurial.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[530px] w-[400px] p-4"
+        customHeight: "h-[530px] w-[400px] p-4",
       },
     ],
     Debug: [
@@ -399,10 +342,10 @@ const App = () => {
           "Inspect the current value of variables while your program pauses during debugging.",
           "Keep Code Insight™ code completion running while debugging.",
           "Debug on any device! Deploy your app to any iOS, Android, macOS, or Linux device and debug as if it were running locally.",
-          "LLDB debugging for Delphi’s Linux toolchain."
+          "LLDB debugging for Delphi’s Linux toolchain.",
         ],
         lastText: " Download RAD Studio Feature Matrix",
-        customHeight: "h-[530px] w-[400px] p-4"
+        customHeight: "h-[530px] w-[400px] p-4",
       },
     ],
     Deploy: [
@@ -418,7 +361,7 @@ const App = () => {
           "Compile for Android API 32! Android API and Libraries updated - API 30, Google Play V3, Android 12. Keep current with the latest requirements for Android as the platform evolves. - This includes latest billing API.",
           "Updated FireDAC library supports latest Microsoft ODBC Driver for SQL Server, MongoDB new transaction feature, improved FDMonitor and FDExplorer tools, text editor support for SQL syntax highlighting in FireDAC SQL text property editor, and reFind files for migration of dbGo (classic ADO) projects to FireDAC.",
           "Updated RAD Server has auth token/session expiration option, IP Address and DateTime to logging, and simplified creation of client applications with EMSFireDACClient component.",
-          "View your apps with iOS Simulator for Delphi by generating binaries for macOS devices running on ARM-64 (M1 or M2 CPUs)"
+          "View your apps with iOS Simulator for Delphi by generating binaries for macOS devices running on ARM-64 (M1 or M2 CPUs)",
         ],
         lastText: "Download RAD Studio Feature Matrix",
         customHeight: "h-[630px] w-[500px] p-4",
@@ -437,24 +380,25 @@ const App = () => {
           "Leverage well-tested and highly optimized cross-platform libraries to build better code fast.",
           "Build unit tests for all of your code using the integrated DUnit and DUnitX frameworks.",
           "Dive into your project without interrupting the application flow by adding live log-in with CodeSite Logging.",
-          "Use Visual Studio Code to edit Delphi source with full code completion."
+          "Use Visual Studio Code to edit Delphi source with full code completion.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[530px] w-[400px] p-4"
+        customHeight: "h-[530px] w-[400px] p-4",
       },
     ],
-    Collaborate : [
+    Collaborate: [
       {
         image: "./image/image6.png",
-        heading: "Collaborate Better with Delphi Teamwork and Remote Desktop Features",
+        heading:
+          "Collaborate Better with Delphi Teamwork and Remote Desktop Features",
         bullets: [
           "Use enhanced Remote Desktop support (for VCL and IDE) to collaborate remotely with your team.",
           "Track and manage changes quickly using version control systems including Subversion, Git and Mercurial repositories.",
           "Easily navigate changes and history using the history tab in the code viewer with the built-in difference viewer.",
-          "Use RAD Studio command-line compilers ideal for quickly integrating into continuous build configurations using our support for MSBuild."
+          "Use RAD Studio command-line compilers ideal for quickly integrating into continuous build configurations using our support for MSBuild.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[530px] w-[400px] p-4" 
+        customHeight: "h-[530px] w-[400px] p-4",
       },
     ],
     Extend: [
@@ -465,10 +409,10 @@ const App = () => {
           "Use GetIt Package Manager to rapidly improve the functionality of your applications by downloading and integrating new component",
           "Extend the IDE with tools and components from Embarcadero Technology Partners",
           "Employ powerful integrated tools and components like Beyond Compare, FastReport, TeeChart, InterBase, IP*Works, and CodeSight!",
-          "Extend the IDE even further with addons and plugins from dozens of third parties and customize the IDE to work your way."
+          "Extend the IDE even further with addons and plugins from dozens of third parties and customize the IDE to work your way.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[630px] w-[600px] p-4"
+        customHeight: "h-[630px] w-[600px] p-4",
       },
     ],
   };
@@ -477,14 +421,14 @@ const App = () => {
     <div className="overflow-x-hidden">
       <TopBar />
       <Navbar />
-      <HomePageWithRectangle/>
-      <Studio/>
-      <MyComponent  items ={data}/>
+      <HomePageWithRectangle />
+      <Studio />
+      <MyComponent items={data} />
       <TabsSection tabsData={tabsData} />
-      <Picture/>
-      <CardList data={BlogData}/>
-      <Global/>
-      <Footer/>
+      <Picture />
+      <CardList data={BlogData} />
+      <Global />
+      <Footer />
     </div>
   );
 };

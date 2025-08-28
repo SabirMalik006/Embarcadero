@@ -48,12 +48,21 @@ function CustomContentList({ data }) {
             </ul>
 
             {/* Last line with icon */}
-            <p className="text-sm text-[18px] 2xl:text-lg inline-flex items-center gap-2 mt-2">
-              <span className="inline border-b border-gray-400 cursor-pointer">
-                {item.lastText}
+            <div className="flex flex-wrap gap-2 sm:gap-0 relative cursor-pointer">
+              <span className="relative text-lg leading-tight">
+                <span className="relative z-10">
+                  Download RAD Studio Feature
+                </span>
+                <span className="absolute bottom-[2px] left-0 h-[1px] w-full bg-black rounded-full"></span>
               </span>
-              <IoCloudDownloadOutline className="w-8 h-7 sm:w-8 sm:h-8 " />
-            </p>
+              <span className="relative text-lg leading-tight">
+                <span className="relative z-10">Matrix</span>
+                <span className="absolute bottom-[2px] left-0 h-[1px] w-full bg-black rounded-full"></span>
+              </span>
+              {/* Icon */}
+              &nbsp;
+              <IoCloudDownloadOutline className="w-7 h-7 absolute sm:static right-2 top-2" />
+            </div>
           </div>
         </div>
       ))}

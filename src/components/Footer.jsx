@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-[1920px] mx-auto py-10 sm:px-6 xl:px-[80px]">
         <div
           className="
-            flex flex-col items-center text-center 
+            flex flex-col px-4 sm:px-0 items-start text-center 
             sm:items-start sm:text-left 
             lg:flex-row lg:justify-between lg:items-start
             xl:flex-col xl:items-start 
@@ -34,13 +34,13 @@ const Footer = () => {
             className="
               grid gap-8 sm:gap-10 md:gap-12 lg:gap-6 xl:gap-12
               grid-cols-2 sm:grid-cols-3 lg:grid-cols-6
-              text-center sm:text-left 2xl:ml-[80px]
+              text-center sm:text-left 2xl:ml-[80px] 
               w-full
             "
           >
             {/* Products */}
-            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
-              <li className="font-bold text-lg sm:text-[20px] md:text-lg xl:text-xl  text-gray-800">
+            <ul className="flex flex-col gap-4 sm:gap-3 items-start">
+              <li className="font-bold text-xl sm:text-[20px] md:text-lg xl:text-xl  text-gray-800">
                 Products
               </li>
               <li className="sm:text-[16px] xl:text-base text-[#4B5563]">
@@ -61,8 +61,8 @@ const Footer = () => {
             </ul>
 
             {/* Free Tools */}
-            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
-              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+            <ul className="flex flex-col gap-4 sm:gap-3 items-start text-left">
+              <li className="font-bold text-xl sm:text-[20px] md:text-xl text-gray-800">
                 Free Tools
               </li>
               <li className="sm:text-[16px] md:text-base text-[#4B5563]">
@@ -89,8 +89,8 @@ const Footer = () => {
             </ul>
 
             {/* Resources */}
-            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
-              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+            <ul className="flex flex-col gap-4 sm:gap-3 items-start text-left">
+              <li className="font-bold text-xl sm:text-[20px] md:text-xl text-gray-800">
                 Resources
               </li>
               <li className="sm:text-[16px] md:text-base text-[#4B5563]">
@@ -115,13 +115,13 @@ const Footer = () => {
                 <a href="">MVP Program</a>
               </li>
               <li className="sm:text-[16px] md:text-base text-[#4B5563]">
-                Web App Development
+                <a href="">Web App Development</a>
               </li>
             </ul>
 
             {/* Community */}
-            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
-              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+            <ul className="flex flex-col gap-4 sm:gap-3 items-start">
+              <li className="font-bold text-xl sm:text-[20px] md:text-xl text-gray-800">
                 Community
               </li>
               <li className="sm:text-[16px] md:text-base text-[#4B5563]">
@@ -130,8 +130,8 @@ const Footer = () => {
             </ul>
 
             {/* Company */}
-            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
-              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+            <ul className="flex flex-col gap-4 sm:gap-3 items-start">
+              <li className="font-bold text-xl sm:text-[20px] md:text-xl text-gray-800">
                 Company
               </li>
               <li className="sm:text-[16px] md:text-base text-[#4B5563]">
@@ -155,8 +155,8 @@ const Footer = () => {
             </ul>
 
             {/* Get in Touch */}
-            <ul className="flex flex-col gap-2 sm:gap-3 items-start">
-              <li className="font-bold text-lg sm:text-[20px] md:text-xl text-gray-800">
+            <ul className="flex flex-col gap-4 sm:gap-3 items-start text-left">
+              <li className="font-bold text-xl sm:text-[20px] md:text-xl text-gray-800">
                 Get in Touch
               </li>
               <li className="sm:text-[16px] md:text-base text-[#4B5563]">
@@ -174,7 +174,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="w-full border-t border-gray-200">
+      <div className="w-full ">
         <div
           className="max-w-[1920px] mx-4 sm:mx-6 xl:mx-20 py-4 
                   flex flex-col-reverse sm:flex-row 
