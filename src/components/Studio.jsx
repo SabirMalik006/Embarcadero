@@ -22,8 +22,7 @@ const Studio = () => {
           <div className="text-center w-full max-w-[745px] xl:max-w-[1440px] 2xl:max-w-[1920px] z-10  rounded-lg ">
             <p className="mb-4 text-[28px] sm:text-[40px] lg:text-5xl font-bold">
               <span
-                className="bg-gradient-to-r from-[#cc1184] via-[#9e34cf] to-[#232efa] 
-                   inline-block text-transparent bg-clip-text"
+                 className="bg-gradient-to-r from-[#ff17d8] via-[#8429ce] to-[#2931DD] inline-block text-transparent bg-clip-text"
               >
                 RAD Studio 11.2&nbsp;
               </span>
