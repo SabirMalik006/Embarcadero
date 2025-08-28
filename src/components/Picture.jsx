@@ -80,7 +80,7 @@ const Picture = () => {
       {/* Button */}
       <button
         className="
-        mt-8
+        mt-12
         bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 
         transition-all duration-500 ease-in-out transform hover:opacity-70 hover:scale-105 cursor-pointer
   "
