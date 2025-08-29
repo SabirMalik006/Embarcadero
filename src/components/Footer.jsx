@@ -25,7 +25,7 @@ const Footer = () => {
             <img
               src="./image/image 1.png"
               alt="Logo"
-              className="w-[180px] h-auto sm:w-[150px] md:w-[202px] 2xl:w-[255px] object-contain cursor-pointer"
+              className="w-[202px] 2xl:w-[255px] object-contain cursor-pointer"
             />
           </div>
 
