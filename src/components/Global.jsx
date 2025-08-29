@@ -24,7 +24,7 @@ const Global = () => {
             <div className="flex flex-col gap-1 md:gap-3 lg:gap-1 items-start ">
               {/* XL only */}
               <div className="hidden xl:flex 2xl:hidden flex-col items-start text-left">
-                <h3 className="text-5xl font-semibold bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] inline-block text-transparent bg-clip-text ">
+                <h3 className="text-5xl font-semibold bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD]  inline-block text-transparent bg-clip-text ">
                   <span className="text-black">Join Our</span> Global
                 </h3>
                 <h4 className="text-5xl bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] inline-block text-transparent bg-clip-text font-semibold">
@@ -42,7 +42,7 @@ const Global = () => {
 
               {/* SM to LG */}
               <div className="hidden sm:flex xl:hidden items-center justify-center w-full h-full ">
-                <h3 className="text-2xl text-center sm:text-[36px] lg:text-4xl font-semibold bg-gradient-to-r from-red-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text tracking-tight">
+                <h3 className="text-2xl text-center sm:text-[36px] lg:text-4xl font-semibold bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD]  inline-block text-transparent bg-clip-text tracking-tight">
                   <span className="text-black">Join Our</span> Global Developer
                   Community
                 </h3>
@@ -64,7 +64,7 @@ const Global = () => {
                       Global Developer
                     </h3>
                     <h4
-                      className="text-3xl bg-gradient-to-r from-pink-600 via-purple-500 to-purple-600 
+                      className="text-3xl bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
         inline-block text-transparent bg-clip-text font-semibold"
                     >
                       Community
