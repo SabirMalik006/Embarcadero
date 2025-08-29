@@ -182,7 +182,7 @@ const Footer = () => {
                   gap-4 text-xs sm:text-sm text-center font-normal"
         >
           {/* Text */}
-          <p className="text-center text-[14px] sm:text-left ">
+          <p className="text-center text-[14px] sm:text-left text-gray-800 ">
             © 2022 Embarcadero Inc. All rights reserved
           </p>
 

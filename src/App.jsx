@@ -367,7 +367,7 @@ const App = () => {
         customHeight: "h-[630px] w-[500px] p-4",
       },
     ],
-    CodeQuality: [
+    Quality: [
       {
         image: "./image/image5.png",
         heading: "Improve the Quality of Your Code with Delphi",

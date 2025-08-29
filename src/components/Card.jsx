@@ -6,9 +6,9 @@ function Card({ heading, Title, end }) {
       className="
         flex flex-col justify-start items-start
         gap-4
-        w-full max-w-[466px]    /* maximum width set */
-        h-auto                  /* height auto for responsiveness */
-        pl-2            /* padding for spacing */
+        w-full max-w-[466px]   
+        h-auto                 
+        pl-2            
         rounded-2xl z-50
       "
     >

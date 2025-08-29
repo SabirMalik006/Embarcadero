@@ -30,9 +30,17 @@ function TabsSection({ tabsData }) {
         <p
           className="text-3xl sm:text-[36px] xl:text-5xl font-bold 
           bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
-          text-transparent bg-clip-text hidden sm:block"
+          text-transparent bg-clip-text hidden md:block"
         >
           <span className="text-black">Ignite </span> Your Imagination
+        </p>
+        <p
+          className="text-3xl sm:text-[36px] xl:text-5xl font-bold 
+  bg-gradient-to-r from-[#FE3B76] via-[#FE3B76CC] via-[#2931DDCC] to-[#2931DD] 
+  text-transparent bg-clip-text hidden sm:block md:hidden"
+        >
+          <span className="text-black">Ignite </span>
+          Your Imagination
         </p>
       </div>
 

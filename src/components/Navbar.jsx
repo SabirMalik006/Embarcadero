@@ -142,7 +142,7 @@ const Navbar = () => {
             <TopBar />
 
             {/* Company Bar (Logo + Cross) */}
-            <div className="w-full flex items-center justify-between pl-6 pr-12 py-7 bg-[#F8F9FC]">
+            <div className="w-full flex items-center justify-between px-4 py-6 sm:pl-10 sm:pr-14  sm:py-8 bg-[#F8F9FC]">
               {/* Company Logo / Name (Left side) */}
               <div className="flex items-center gap-2">
                 <img
@@ -164,7 +164,7 @@ const Navbar = () => {
 
           {/* Slide-in Menu (content area with limited width) */}
           <div
-            className="fixed top-[180px] sm:top-[123px] right-0 h-[calc(100%-120px)] 
+            className="fixed top-[172px] sm:top-[123px] right-0 h-[calc(100%-120px)] 
                 w-full sm:w-3/4 sm:max-w-sm 
                 bg-[#F6F8FB] shadow-lg flex flex-col justify-start overflow-y-auto 
                 transition-transform duration-300 z-102 lg:hidden"
