@@ -3,7 +3,7 @@ import { IoCloudDownloadOutline } from "react-icons/io5";
 
 function CustomContentList({ data }) {
   return (
-    <div className="space-y-6  lg:px-0 ">
+    <div className="space-y-6 lg:px-0">
       {data.map((item, index) => (
         <div
           key={index}
@@ -23,11 +23,10 @@ function CustomContentList({ data }) {
             <img
               src={item.image}
               alt=""
-              className={
-                item.customHeight
-                  ? `${item.customHeight} object-contain`
-                  : "w-full h-full object-cover"
-              }
+              className={`object-contain
+                w-full 
+                max-h-[280px] sm:max-h-[400px] lg:max-h-full
+              `}
             />
           </div>
 
@@ -36,19 +35,19 @@ function CustomContentList({ data }) {
             <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-red-500/8 to-transparent pointer-events-none rounded-lg"></div>
 
             {/* Heading */}
-            <h2 className="font-bold text-[24px] 2xl:text-2xl 2xl:font-medium mb-4 ">
+            <h2 className="font-bold text-[24px] 2xl:text-2xl 2xl:font-medium mb-4">
               {item.heading}
             </h2>
 
             {/* Bullet Points */}
-            <ul className="list-disc list-inside font-normal  text-[16px] 2xl:text-base space-y-3 mb-4 leading-relaxed">
+            <ul className="list-disc list-inside font-normal text-[16px] 2xl:text-base space-y-6 mb-4 leading-6">
               {item.bullets.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
             </ul>
 
             {/* Last line with icon */}
-            <div className="flex flex-wrap gap-2 sm:gap-0 relative cursor-pointer">
+            <div className="flex flex-wrap gap-2 sm:gap-0 relative cursor-pointer mt-12">
               <span className="relative text-lg leading-tight">
                 <span className="relative z-10">
                   Download RAD Studio Feature

@@ -14,10 +14,8 @@ function TabsSection({ tabsData }) {
       setIsMobile(width < 746);
 
       if (width >= 1280) {
-       
         setVisibleTabs(tabNames.slice(0, 7));
       } else {
-       
         setVisibleTabs(tabNames);
       }
     };
@@ -57,10 +55,14 @@ function TabsSection({ tabsData }) {
                   key={tab}
                   onClick={() => setActiveTab(tab)}
                   className={`
-                    ${isMobile ? "flex-shrink-0 w-[107px] sm:w-[110px] xl:w-[160px]" : "flex-1"}
-                    text-[16px] sm:text-[18px] md:text-base 2xl:font-medium 
+                    ${
+                      isMobile
+                        ? "flex-shrink-0 w-[107px] xl:w-[160px]"
+                        : "flex-1"
+                    }
+                   text-[20px] md:text-[24px] 2xl:font-medium 
                     2xl:text-2xl 
-                    py-4 cursor-pointer
+                    py-3 cursor-pointer
                     transition-colors duration-500 ease-in-out 
                     whitespace-nowrap
                     ${

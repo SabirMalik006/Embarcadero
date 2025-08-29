@@ -58,15 +58,15 @@ const HomePageWithRectangle = () => {
       </div>
 
       {/* Buttons Section */}
-      <div className="flex flex-col sm:flex-row justify-center items-center mt-6 gap-2 px-4 sm:px-0 ">
+      <div className="flex flex-col sm:flex-row justify-center items-center mt-6 gap-2 px-[6px] sm:px-0 ">
         <button
-          className="bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 
+          className="bg-black text-white px-5 py-3 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 
   transition-all duration-500 ease-in-out transform hover:opacity-70 hover:scale-105 cursor-pointer"
         >
           <a href="">Start Your Free Trial</a>
         </button>
 
-        <button className="border border-black px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto  z-62 transition-colors duration-300 hover:bg-black hover:text-white cursor-pointer">
+        <button className="border border-black px-5 py-3 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto  z-62 transition-colors duration-300 hover:bg-black hover:text-white cursor-pointer">
           <a href="">Request a Product Demo</a>
         </button>
       </div>
@@ -77,22 +77,23 @@ const HomePageWithRectangle = () => {
         <div className="flex justify-center relative w-full">
           <img
             className="rounded-2xl h-auto object-contain 
-                       w-[343px] sm:w-[696px] md:w-[900px] xl:w-[1279px] 2xl:max-w-[1274px]"
+               w-full sm:max-w-[695px] md:max-w-[900px] xl:max-w-[1279px] 2xl:max-w-[1274px]"
             src="./image/Rectangle 364.png"
             alt=""
           />
-          <img
-            className="w-[22px] h-[22px] sm:w-[46px] sm:h-[46px] xl:w-[85px] xl:h-[85px] absolute top-1/2 -translate-y-1/2"
+          <img  
+            className="w-[22px] h-[22px] sm:w-[46px] sm:h-[46px] xl:w-[85px] xl:h-[85px] 
+               absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             src="./image/Frame 427318308.png"
             alt=""
           />
         </div>
 
         {/* Resource Section */}
-        <div className="flex justify-center  2xl:px-[313px]">
+        <div className="flex justify-center    ">
           <div
             className="flex flex-col sm:flex-row justify-between items-center 
-                       mt-12 sm:px-8 xl:py-6 xl:px-8 bg-amber-500  py-4 w-full  md:max-w-[1024px] xl:max-w-[1440px] 2xl:max-w-[1920px] gap-4 rounded-2xl"
+                       mt-6 sm:px-8 xl:py-6 xl:px-8 bg-amber-500 border  border-[#EFE4F0] py-4 w-full  md:max-w-[1024px] xl:max-w-[1440px] 2xl:max-w-[1274px] gap-4 rounded-2xl"
             style={{
               background:
                 "linear-gradient(to right, #e5e9f0 0%, #f5f1f1e8 50%, #e5e9f0 100%)",
@@ -114,7 +115,7 @@ const HomePageWithRectangle = () => {
 
             <div className="flex-shrink-0 w-full sm:w-auto px-4 sm:px-0">
               <button
-                className="flex justify-center items-center 
+                className="  flex justify-center items-center 
   px-[25px] py-[12px] 
   w-full sm:w-[167px] h-[43px] 
   bg-[#262626] shadow-[0px_4px_32px_rgba(255,94,101,0.1)] 

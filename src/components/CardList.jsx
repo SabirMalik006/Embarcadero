@@ -39,7 +39,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
 
       {/* Dotted line after rows */}
       {(onlyFirstRowLine ? rowIndex === 0 : rowIndex < chunks.length - 1) && (
-        <hr className="my-10 sm:my-12 xl:my-20 custom-dashed" />
+        <hr className="my-6 sm:my-12 xl:my-20 custom-dashed" />
       )}
     </div>
   ));
@@ -72,7 +72,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
           </span>
         </p>
         <img
-          className="hidden lg:block w-10 sm:w-12 xl:w-[90px] z-51"
+          className="hidden lg:block w-10 sm:w-12 xl:w-[58px] xl:h-auto z-51"
           src="./image/Group 39868.png"
           alt="Arrow Icon"
         />

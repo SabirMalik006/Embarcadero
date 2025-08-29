@@ -61,21 +61,30 @@ function MyComponent({ items }) {
 
       {/* Custom Arrows */}
       <div className="flex justify-center items-center gap-4 mt-8">
+        {/* Prev Arrow */}
         <div
-          className={`custom-prev flex justify-center items-center w-9 h-9 rounded-lg cursor-pointer transition-opacity ${
-            isBeginning
-              ? "bg-gray-800  cursor-not-allowed"
-              : " bg-[#c0b9b9] hover:300 hover:opacity-80"
-          }`}
+          className={`custom-prev flex justify-center items-center w-9 h-9 rounded-lg cursor-pointer transition-opacity 
+      ${
+        isBeginning
+          ? "bg-[#c0b9b9] cursor-not-allowed" 
+          : isEnd
+          ? "bg-black cursor-pointer" 
+          : "bg-[#c0b9b9] hover:opacity-80"
+      }`}
         >
           <img src="./image/Vector 106 (1).png" alt="Prev" />
         </div>
+
+        {/* Next Arrow */}
         <div
-          className={`custom-next flex justify-center items-center w-9 h-9 rounded-lg cursor-pointer transition-opacity ${
-            isEnd
-              ? "bg-[#c0b9b9] cursor-not-allowed"
-              : "bg-[#262626] hover:opacity-80"
-          }`}
+          className={`custom-next flex justify-center items-center w-9 h-9 rounded-lg cursor-pointer transition-opacity 
+      ${
+        isEnd
+          ? "bg-[#c0b9b9] cursor-not-allowed" 
+          : isBeginning
+          ? "bg-black cursor-pointer" 
+          : "bg-black hover:opacity-80"
+      }`}
         >
           <img src="./image/Vector 106.png" alt="Next" />
         </div>

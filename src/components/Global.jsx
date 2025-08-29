@@ -2,7 +2,7 @@ import React from "react";
 
 const Global = () => {
   return (
-    <div className="relative max-w-[1920px] xl:mt-[128px] sm:mt-[120px] mt-[9px]  ">
+    <div className="relative max-w-[1920px] xl:mt-[128px] sm:mt-[120px] mt-[80px]  ">
       {/* Background blur box */}
       <div
         className="absolute hidden xl:block 
@@ -55,15 +55,16 @@ const Global = () => {
                   {/* Inner div with 343px width */}
                   <div className="w-[343px] flex flex-col items-center justify-center text-center py-2">
                     <h3
-                      className="text-[29px] font-semibold whitespace-nowrap 
-        bg-gradient-to-r from-red-600 via-purple-500 to-indigo-400 
-        inline-block text-transparent bg-clip-text"
+                      className="text-[30px] font-semibold whitespace-nowrap 
+                      inline-block text-transparent bg-clip-text 
+                      bg-[linear-gradient(to_right,#e025d1_0%,#a727da_40%,#501ec5_100%)]"
+                      
                     >
                       <span className="text-black font-semibold">Join Our</span>{" "}
                       Global Developer
                     </h3>
                     <h4
-                      className="text-3xl bg-gradient-to-r from-red-600 via-purple-500 to-indigo-400 
+                      className="text-3xl bg-gradient-to-r from-pink-600 via-purple-500 to-purple-600 
         inline-block text-transparent bg-clip-text font-semibold"
                     >
                       Community

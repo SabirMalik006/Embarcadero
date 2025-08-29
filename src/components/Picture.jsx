@@ -3,7 +3,7 @@ import React from "react";
 const Picture = () => {
   return (
     <div
-      className="flex flex-col justify-center items-center mt-[80px] px-[40px] py-26 text-center max-w-8xl mx-auto  relative overflow-hidden"
+      className="flex flex-col justify-center items-center mt-[80px] px-[16px] sm:px-[40px] py-34 text-center max-w-8xl mx-auto  relative overflow-hidden"
       style={{
         background:
           "linear-gradient(to right, #ECECF8 0%, #F6F9F9 50%, #ECF6F8 100%)",
@@ -12,11 +12,13 @@ const Picture = () => {
       {/* Background Decorations */}
       <img
         className="absolute 
-             2xl:h-[703px] 2xl:w-[1000px] 
-             xl:h-[700px] xl:w-[1014px] 
-             sm:w-[662px] sm:h-auto 
-             sm:left-[-533px] sm:top-[3px] 
-             left-[-300px]  
+             2xl:h-[816px] 2xl:w-[1000px]
+             2xl:l-[-565px] 2xl:t-[19px] 
+             xl:h-[750px] xl:w-[1014px] 
+            
+             sm:w-[750px] sm:h-auto 
+             sm:left-[-621px] sm:top-[27px] 
+             h-[750px] left-[-321px] 
                           block"
         src="./image/fullVector1.svg"
         alt="Background Left"
@@ -24,16 +26,16 @@ const Picture = () => {
 
       <img
         className="absolute 
-             2xl:h-[1430px] 2xl:w-[822px] 2xl:right-[-410px] 2xl:top-[-239px] 
-             xl:w-[850px] xl:h-[700px] xl:right-[-410px] xl:top-[150px] 
-             sm:w-[850px] sm:h-[700px] sm:right-[-446px] sm:top-[150px] 
-             w-[865px] right-[-218px] top-[325px] block"
+             2xl:h-[1430px] 2xl:w-[822px] 2xl:right-[-409px] 2xl:top-[-137px] 
+             xl:w-[850px] xl:h-[700px] xl:right-[-410px] xl:top-[172px] 
+             sm:w-[850px] sm:h-[700px] sm:right-[-446px] sm:top-[240px] 
+             w-[865px] right-[-218px] top-[400px] block"
         src="./image/v.svg"
         alt="Background Right"
       />
 
       {/* Heading */}
-      <div className="mb-8 relative z-10">
+      <div className="mb-8 relative z-10 ">
         <h2 className="text-[32px] sm:text-[40px] xl:text-[48px] font-semibold xl:font-bold leading-snug whitespace-nowrap">
           Get RAD{" "}
           <span
@@ -81,7 +83,7 @@ const Picture = () => {
       <button
         className="
         mt-12
-        bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 
+        bg-black text-white px-5 py-4 sm:px-6 sm:py-3 rounded-xl w-full sm:w-[158px] z-61 
         transition-all duration-500 ease-in-out transform hover:opacity-70 hover:scale-105 cursor-pointer
   "
       >

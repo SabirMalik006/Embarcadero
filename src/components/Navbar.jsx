@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
-
+import TopBar from "./TopBar";
+import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -128,39 +129,115 @@ const Navbar = () => {
 
       {/* -------- Mobile/Tablet Dropdown Menu -------- */}
       {showMenu && (
-        <div className="lg:hidden bg-white shadow-md p-4 mt-2 space-y-3 w-full">
-          <ul className="flex flex-col gap-2">
-            <li className="flex items-center gap-1">
-              <a href="">Products</a>
-              <img src="./image/dash.png" alt="" />
-            </li>
-            <li className="flex items-center gap-1">
-              <a href="">Free Tools </a>
-              <img src="./image/dash.png" alt="" />
-            </li>
-            <li>
-              <a href="">Blog</a>
-            </li>
-            <li className="flex items-center gap-1">
-              <a href="">Resources </a>
-              <img src="./image/dash.png" alt="" />
-            </li>
-            <li>
-              <a href="">Getit</a>
-            </li>
-            <li>
-              <a href="">New Tools</a>
-            </li>
-          </ul>
-          <div className="flex flex-col gap-2 mt-2 sm:hidden">
-            <button className="">
-              <a href="">Sign In</a>
-            </button>
-            <button className="border rounded-lg">
-              <a href="">Buy Now</a>
-            </button>
+        <>
+          {/* Overlay / Background dim */}
+          <div
+            className="fixed inset-0 bg-black/30 backdrop-blur-sm z-100 lg:hidden cursor-pointer"
+            onClick={() => setShowMenu(false)}
+          ></div>
+
+          {/* Fullscreen Top Bar Layer */}
+          <div className="fixed top-0 left-0 right-0 z-101 lg:hidden ">
+            {/* TopBar component */}
+            <TopBar />
+
+            {/* Company Bar (Logo + Cross) */}
+            <div className="w-full flex items-center justify-between pl-6 pr-12 py-7 bg-[#F8F9FC]">
+              {/* Company Logo / Name (Left side) */}
+              <div className="flex items-center gap-2">
+                <img
+                  src="./image/image 1.png"
+                  alt="Company Logo"
+                  className="h-6 w-auto"
+                />
+              </div>
+
+              {/* Close Button (Right side) */}
+              <button
+                className="text-gray-700 hover:text-black text-[24px]"
+                onClick={() => setShowMenu(false)}
+              >
+                <RxCross2 />
+              </button>
+            </div>
           </div>
-        </div>
+
+          {/* Slide-in Menu (content area with limited width) */}
+          <div
+            className="fixed top-[180px] sm:top-[123px] right-0 h-[calc(100%-120px)] 
+                w-full sm:w-3/4 sm:max-w-sm 
+                bg-[#F6F8FB] shadow-lg flex flex-col justify-start overflow-y-auto 
+                transition-transform duration-300 z-102 lg:hidden"
+          >
+            {/*content */}
+            <div className="px-6 pt-4 pr-10 grid grid-cols-2 gap-4">
+              <a href="" className="text-[14px]  font-medium">
+                MyDownloads
+              </a>
+              <a href="" className="text-[14px] font-medium">
+                Upgrade Center
+              </a>
+              <a href="" className="text-[14px] font-medium">
+                My Customer Portal
+              </a>
+              <a href="" className="text-[14px] font-medium">
+                Contact Us
+              </a>
+            </div>
+
+            {/* Navigation Links */}
+            <ul className="flex flex-col gap-[34px] px-6 py-6">
+              <li className="flex items-center justify-between gap-2">
+                <a href="" className="font-medium">
+                  Products
+                </a>
+                <img src="./image/downArrow.png" className="w-5 h-5" alt="" />
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <a href="" className="font-medium">
+                  Free Tools
+                </a>
+                <img src="./image/downArrow.png" className="w-5 h-5" alt="" />
+              </li>
+              <li>
+                <a href="" className="font-medium">
+                  Blog
+                </a>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <a href="" className="font-medium">
+                  Resources
+                </a>
+                <img src="./image/downArrow.png" alt="" />
+              </li>
+              <li>
+                <a href="" className="font-medium">
+                  Getit
+                </a>
+              </li>
+              <li>
+                <a href="" className="font-medium">
+                  New Tools
+                </a>
+              </li>
+            </ul>
+
+            {/* Mobile buttons */}
+            <div className="flex flex-col gap-3 mt-auto px-9  pb-6">
+              <button className="w-full bg-black text-white py-3 rounded-[12px]">
+                <a href="">Free trial</a>
+              </button>
+              <button className="w-full border border-gray-300  py-3 rounded-[12px]">
+                <a href="">Buy Now</a>
+              </button>
+              <button className="p-2">
+                <a href="#" className="inline-block border-b border-black ">
+                  Sign In
+                </a>
+              </button>
+            </div>
+          </div>
+        </>
       )}
 
       {/* -------- Breadcrumbs -------- */}

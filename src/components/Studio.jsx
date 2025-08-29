@@ -3,17 +3,17 @@ import React from "react";
 const Studio = () => {
   return (
     <>
-      <div className="main flex justify-center items-center mt-[128px] relative  ">
+      <div className="main flex justify-center items-center mt-[80px] relative  ">
+        {/* Top-right Arrow */}
         <img
-          className="hidden  2xl:block absolute right-72 bottom-12 w-16 sm:w-24 md:w-auto"
-          src="./image/Group.png"
+          className="hidden 2xl:block absolute right-65 w-16 arrow-img"
+          src="./image/arrow.png"
           alt=""
         />
 
-        {/* Top-right Arrow */}
         <img
-          className="hidden  2xl:block absolute right-65 top-0 w-16 "
-          src="./image/arrow.png"
+          className="hidden  2xl:block absolute right-72 bottom-6 w-16 sm:w-24 md:w-auto"
+          src="./image/Group.png"
           alt=""
         />
 
@@ -21,9 +21,7 @@ const Studio = () => {
         <div className="flex items-center justify-center px-[16px] sm:px-[24.5px] xl:px-[83px] 2xl:px-[323px]">
           <div className="text-center w-full max-w-[745px] xl:max-w-[1440px] 2xl:max-w-[1920px] z-10  rounded-lg ">
             <p className="mb-4 text-[28px] sm:text-[40px] lg:text-5xl font-bold">
-              <span
-                 className="bg-gradient-to-r from-[#ff17d8] via-[#8429ce] to-[#2931DD] inline-block text-transparent bg-clip-text"
-              >
+              <span className="bg-gradient-to-r from-[#ff17d8] via-[#8429ce] to-[#2931DD] inline-block text-transparent bg-clip-text">
                 RAD Studio 11.2&nbsp;
               </span>
               is here!

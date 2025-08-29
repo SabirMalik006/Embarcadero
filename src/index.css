@@ -38,5 +38,16 @@ body {
 }
 
 
+@media screen and (max-width: 1789px) {
+  .arrow-img {
+    position: absolute !important;
+    bottom: 30px;
+  }
+  .group-img {
+    position: absolute;
+    
+  }
+}
+
 
 /* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap'); */
