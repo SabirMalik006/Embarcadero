@@ -60,19 +60,19 @@ const HomePageWithRectangle = () => {
       {/* Buttons Section */}
       <div className="flex flex-col sm:flex-row justify-center items-center mt-6 gap-2 px-[6px] sm:px-0 ">
         <button
-          className="bg-black text-white px-5 py-3 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto z-61 
+          className="bg-black text-white px-5 py-3 sm:px-6 sm:py-3 rounded-xl w-full sm:w-[189px] z-61 
   transition-all duration-500 ease-in-out transform hover:opacity-70 hover:scale-105 cursor-pointer"
         >
           <a href="">Start Your Free Trial</a>
         </button>
 
-        <button className="border border-black px-5 py-3 sm:px-6 sm:py-3 rounded-xl w-full sm:w-auto  z-62 transition-colors duration-300 hover:bg-black hover:text-white cursor-pointer">
+        <button className="border border-black px-5 py-3 sm:px-6 sm:py-3 rounded-xl w-full sm:w-[229px]  z-62 transition-colors duration-300 hover:bg-black hover:text-white cursor-pointer">
           <a href="">Request a Product Demo</a>
         </button>
       </div>
 
       {/* Rectangle Section */}
-      <div className="relative mt-[80px]  xl:px-[80.5px] 2xl:px-0 xl:mt-[128px] px-4 sm:px-6 lg:px-20 ">
+      <div className="relative mt-[80px]  xl:px-[80.5px] 2xl:px-0 xl:mt-[128px]  sm:px-6 lg:px-20 ">
         {/* Main Image */}
         <div className="flex justify-center relative w-full">
           <img
