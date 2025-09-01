@@ -67,14 +67,14 @@ function TabsSection({ tabsData }) {
                   className={`
           ${
             isMobile
-              ? "flex-shrink-0 w-[107px] xl:w-[160px] first:rounded-l-[12px] rounded-[12px]"
+              ? "flex-shrink-0 w-[107px] xl:w-[160px] first:rounded-l-[12px] "
               : "flex-1"
           }
           text-[20px] md:text-[24px] 2xl:font-medium 
           2xl:text-2xl 
           py-3 cursor-pointer
           transition-colors duration-300 ease-in-out 
-          whitespace-nowrap
+          whitespace-nowrap rounded-[12px]  
           ${
             activeTab === tab
               ? "bg-[#262626] text-white rounded-xl"
