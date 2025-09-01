@@ -77,7 +77,7 @@ const HomePageWithRectangle = () => {
         <div className="flex justify-center relative w-full">
           <img
             className="rounded-2xl h-auto object-contain 
-               w-full sm:max-w-[695px] md:max-w-[900px] xl:max-w-[1279px] 2xl:max-w-[1274px]"
+               w-full sm:max-w-[695px] md:max-w-[1024px] xl:max-w-[1279px] 2xl:max-w-[1274px]"
             src="./image/Rectangle 364.png"
             alt=""
           />

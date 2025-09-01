@@ -142,7 +142,7 @@ const Navbar = () => {
             <TopBar />
 
             {/* Company Bar (Logo + Cross) */}
-            <div className="w-full flex items-center justify-between px-4 py-6 sm:pl-10 sm:pr-14  sm:py-8 bg-[#F8F9FC]">
+            <div className="fixed top-[100px] sm:top-[44px] left-0 right-0 flex items-center justify-between px-4 py-6 sm:pl-10 sm:pr-14 sm:py-8 bg-[#F8F9FC]">
               {/* Company Logo / Name (Left side) */}
               <div className="flex items-center gap-2">
                 <img
@@ -164,74 +164,115 @@ const Navbar = () => {
 
           {/* Slide-in Menu (content area with limited width) */}
           <div
-            className="fixed top-[172px] sm:top-[123px] right-0 h-[calc(100%-120px)] 
-                w-full sm:w-3/4 sm:max-w-sm 
-                bg-[#F6F8FB] shadow-lg flex flex-col justify-start overflow-y-auto 
-                transition-transform duration-300 z-102 lg:hidden"
+            className="fixed top-[162px] sm:top-[120px] right-0 bottom-0 
+              w-full sm:w-3/4 sm:max-w-sm 
+              bg-[#F6F8FB] shadow-lg flex flex-col justify-start overflow-y-auto 
+              transition-transform duration-300 z-102 lg:hidden"
           >
             {/*content */}
             <div className="px-6 pt-4 pr-10 grid grid-cols-2 gap-4">
-              <a href="" className="text-[14px]  font-medium">
+              <a
+                href=""
+                className="text-[14px]  font-medium cursor-pointer text-[#262626] "
+              >
                 MyDownloads
               </a>
-              <a href="" className="text-[14px] font-medium">
+              <a
+                href=""
+                className="text-[14px] font-medium  cursor-pointer text-[#262626] "
+              >
                 Upgrade Center
               </a>
-              <a href="" className="text-[14px] font-medium">
+              <a
+                href=""
+                className="text-[14px] font-medium  cursor-pointer text-[#262626]"
+              >
                 My Customer Portal
               </a>
-              <a href="" className="text-[14px] font-medium">
+              <a
+                href=""
+                className="text-[14px] font-medium  cursor-pointer text-[#262626]"
+              >
                 Contact Us
               </a>
             </div>
 
             {/* Navigation Links */}
             <ul className="flex flex-col gap-[34px] px-6 py-6">
-              <li className="flex items-center justify-between gap-2">
-                <a href="" className="font-medium">
+              <li className="flex items-center justify-between gap-2 group cursor-pointer">
+                <a href="" className="font-medium text-[#262626]">
                   Products
                 </a>
-                <img src="./image/downArrow.png" className="w-5 h-5" alt="" />
+                <img
+                  src="./image/downArrow.png"
+                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180"
+                  alt=""
+                />
               </li>
-              <li className="flex items-center justify-between gap-2">
-                <a href="" className="font-medium">
+
+              <li className="flex items-center justify-between gap-2 group cursor-pointer">
+                <a href="" className="font-medium text-[#262626]">
                   Free Tools
                 </a>
-                <img src="./image/downArrow.png" className="w-5 h-5" alt="" />
+                <img
+                  src="./image/downArrow.png"
+                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180"
+                  alt=""
+                />
               </li>
+
               <li>
-                <a href="" className="font-medium">
+                <a
+                  href=""
+                  className="font-medium cursor-pointer text-[#262626]"
+                >
                   Blog
                 </a>
               </li>
-              <li className="flex items-center justify-between gap-2">
-                <a href="" className="font-medium">
+
+              <li className="flex items-center justify-between gap-2 group cursor-pointer">
+                <a href="" className="font-medium text-[#262626]">
                   Resources
                 </a>
-                <img src="./image/downArrow.png" alt="" />
+                <img
+                  src="./image/downArrow.png"
+                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180"
+                  alt=""
+                />
               </li>
+
               <li>
-                <a href="" className="font-medium">
+                <a
+                  href=""
+                  className="font-medium cursor-pointer text-[#262626]"
+                >
                   Getit
                 </a>
               </li>
+
               <li>
-                <a href="" className="font-medium">
+                <a
+                  href=""
+                  className="font-medium cursor-pointer text-[#262626] "
+                >
                   New Tools
                 </a>
               </li>
             </ul>
 
             {/* Mobile buttons */}
-            <div className="flex flex-col gap-3 mt-auto px-9  pb-6">
-              <button className="w-full bg-black text-white py-3 rounded-[12px]">
+            <div className="flex flex-col gap-3 mt-auto px-5  pb-6">
+              <button className="w-full bg-black text-white py-3 rounded-[12px] font-medium cursor-pointer">
                 <a href="">Free trial</a>
               </button>
-              <button className="w-full border border-gray-300  py-3 rounded-[12px]">
+              <button className="w-full border text-[#262626] border-[#171717]  py-3 rounded-[12px] font-medium cursor-pointer">
                 <a href="">Buy Now</a>
               </button>
               <button className="p-2">
-                <a href="#" className="inline-block border-b border-black ">
+                <a
+                  href="#"
+                  className="inline-block border-b text-[#262626] border-black cursor-pointer font-medium"
+                >
                   Sign In
                 </a>
               </button>
@@ -265,37 +306,37 @@ const Navbar = () => {
             className="group relative text-sm leading-none overflow-hidden"
           >
             <span className="relative z-10">What's New?</span>
-            <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-gray-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
+            <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-gray-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
           </a>
 
-          <p className="text-gray-500">-</p>
+          <p className="text-gray-500 pb-1 sm:pb-0">-</p>
 
           <a
             href="#"
             className="group relative text-sm leading-none overflow-hidden"
           >
             <span className="relative z-10">Product Edition</span>
-            <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-gray-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
+            <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-gray-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
           </a>
 
-          <p className="text-gray-500">-</p>
+          <p className="text-gray-500 pb-1 sm:pb-0">-</p>
 
           <a
             href="#"
             className="group relative text-sm leading-none overflow-hidden"
           >
             <span className="relative z-10">Previous Version</span>
-            <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-gray-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
+            <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-gray-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
           </a>
 
-          <p className="text-gray-500">-</p>
+          <p className="text-gray-500 pb-1 sm:pb-0">-</p>
 
           <a
             href="#"
             className="group relative text-sm leading-none overflow-hidden"
           >
             <span className="relative z-10">Customers</span>
-            <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-gray-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
+            <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-gray-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
           </a>
         </div>
       </div>

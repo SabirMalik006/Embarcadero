@@ -53,7 +53,7 @@ const Global = () => {
                 {/* Parent with max width 375px */}
                 <div className="w-[375px] px-4">
                   {/* Inner div with 343px width */}
-                  <div className="w-[343px] flex flex-col items-center justify-center text-center py-2">
+                  <div className="w-[343px] flex flex-col items-center justify-center text-center ">
                     <h3
                       className="text-[30px] font-semibold whitespace-nowrap 
                       inline-block text-transparent bg-clip-text 
@@ -64,7 +64,7 @@ const Global = () => {
                       Global Developer
                     </h3>
                     <h4
-                      className="text-3xl bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
+                      className="text-[30px] bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] 
         inline-block text-transparent bg-clip-text font-semibold"
                     >
                       Community

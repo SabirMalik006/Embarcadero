@@ -35,7 +35,7 @@ function TabsSection({ tabsData }) {
           <span className="text-black">Ignite </span> Your Imagination
         </p>
         <p
-          className="text-3xl sm:text-[36px] xl:text-5xl font-bold 
+          className="text-3xl sm:text-[36px] xl:text-5xl font-medium 
   bg-gradient-to-r from-[#FE3B76] via-[#FE3B76CC] via-[#2931DDCC] to-[#2931DD] 
   text-transparent bg-clip-text hidden sm:block md:hidden"
         >
@@ -47,15 +47,17 @@ function TabsSection({ tabsData }) {
       <div className="w-full flex justify-center mt-12 mb-10">
         <div
           className="w-full max-w-5xl xl:max-w-[1440px] 
-                     px-[16px] sm:px-[24.5px] xl:px-[80px] 
+                       xl:px-[80px] 
                      2xl:max-w-[1920px] z-10 2xl:px-[192px]"
         >
           {/* Tabs */}
+          
           <div
             className={`
-              flex border p-2 border-[#E5E5E5] rounded-[12px]
-              ${isMobile ? "overflow-x-auto hide-scrollbar" : "overflow-hidden"}
-            `}
+    flex border p-2 border-[#E5E5E5] ml-4 
+    ${isMobile ? "rounded-l-[12px]" : "rounded-[12px]  " }
+    ${isMobile ? "overflow-x-auto hide-scrollbar" : "overflow-hidden "}
+  `}
           >
             <div className={`${isMobile ? "flex w-max" : "flex w-full"}`}>
               {visibleTabs.map((tab) => (
@@ -63,22 +65,22 @@ function TabsSection({ tabsData }) {
                   key={tab}
                   onClick={() => setActiveTab(tab)}
                   className={`
-                    ${
-                      isMobile
-                        ? "flex-shrink-0 w-[107px] xl:w-[160px]"
-                        : "flex-1"
-                    }
-                   text-[20px] md:text-[24px] 2xl:font-medium 
-                    2xl:text-2xl 
-                    py-3 cursor-pointer
-                    transition-colors duration-500 ease-in-out 
-                    whitespace-nowrap
-                    ${
-                      activeTab === tab
-                        ? "bg-[#262626] text-white rounded-xl "
-                        : "bg-transparent text-gray-600"
-                    }
-                  `}
+          ${
+            isMobile
+              ? "flex-shrink-0 w-[107px] xl:w-[160px] first:rounded-l-[12px] rounded-[12px]"
+              : "flex-1"
+          }
+          text-[20px] md:text-[24px] 2xl:font-medium 
+          2xl:text-2xl 
+          py-3 cursor-pointer
+          transition-colors duration-300 ease-in-out 
+          whitespace-nowrap
+          ${
+            activeTab === tab
+              ? "bg-[#262626] text-white rounded-xl"
+              : "bg-transparent text-gray-600"
+          }
+        `}
                 >
                   {tab}
                 </button>

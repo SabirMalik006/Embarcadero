@@ -71,6 +71,12 @@ const App = () => {
       des: "Support for the latest Android Level 32 API and latest Billing APIs, and migration to use the AndroidX libraries. Android support for multiple classes.",
       image: "./image/android.png",
     },
+    ,
+    {
+      name: "User Experience",
+      des: "Completely rebuilt Welcome Page with a native look and feel, and a UI that fits the IDE, and customizable layout and content.",
+      image: "./image/user.png",
+    },
     {
       name: "Cloud Sync",
       des: "Seamlessly sync your data across all devices with real-time updates.",
@@ -127,6 +133,11 @@ const App = () => {
       name: "Calendar Integration",
       des: "Sync with your calendar to manage tasks and events.",
       image: "https://img.icons8.com/ios-filled/48/calendar.png",
+    },
+    {
+      name: "Multi-Language",
+      des: "Use the app in multiple languages to reach a wider audience.",
+      image: "https://img.icons8.com/ios-filled/48/language.png",
     },
     {
       name: "Tasks Management",
@@ -266,7 +277,6 @@ const App = () => {
       image: "https://img.icons8.com/ios-filled/48/customer-support.png",
     },
   ];
-
   const BlogData = [
     {
       heading: "Learning & Development",
@@ -303,7 +313,7 @@ const App = () => {
   const tabsData = {
     Design: [
       {
-        image: "./image/Frame 427318143.png",
+        image: "./image/image2.png",
         heading: "Design beautiful desktop and mobile app UIs with RAD Studio.",
         bullets: [
           "Use Delphi's award-winning VCL framework for Windows and the FireMonkey (FMX) visual framework for cross-platform responsive UIs.",
@@ -318,7 +328,7 @@ const App = () => {
     ],
     Develop: [
       {
-        image: "./image/image2.png",
+        image: "./image/Frame 427318143.png",
         heading: "Code Faster and Smarter with Delphi",
         bullets: [
           "IDE support for Markdown documents and VCL-based HTML preview.",
@@ -329,7 +339,7 @@ const App = () => {
           "Integrate with version control systems including Git, Subversion and Mercurial.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[530px] w-[400px] p-4",
+
       },
     ],
     Debug: [
@@ -345,7 +355,7 @@ const App = () => {
           "LLDB debugging for Delphi’s Linux toolchain.",
         ],
         lastText: " Download RAD Studio Feature Matrix",
-        customHeight: "h-[530px] w-[400px] p-4",
+ 
       },
     ],
     Deploy: [
@@ -364,7 +374,7 @@ const App = () => {
           "View your apps with iOS Simulator for Delphi by generating binaries for macOS devices running on ARM-64 (M1 or M2 CPUs)",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[630px] w-[500px] p-4",
+        
       },
     ],
     Quality: [
@@ -383,12 +393,11 @@ const App = () => {
           "Use Visual Studio Code to edit Delphi source with full code completion.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[530px] w-[400px] p-4",
       },
     ],
     Collaborate: [
       {
-        image: "./image/image6.png",
+        image: "./image/image2.png",
         heading:
           "Collaborate Better with Delphi Teamwork and Remote Desktop Features",
         bullets: [
@@ -398,7 +407,8 @@ const App = () => {
           "Use RAD Studio command-line compilers ideal for quickly integrating into continuous build configurations using our support for MSBuild.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[530px] w-[400px] p-4",
+        customHeight: "h-[330px] w-[200px] ",
+        
       },
     ],
     Extend: [
@@ -412,7 +422,7 @@ const App = () => {
           "Extend the IDE even further with addons and plugins from dozens of third parties and customize the IDE to work your way.",
         ],
         lastText: "Download RAD Studio Feature Matrix",
-        customHeight: "h-[630px] w-[600px] p-4",
+       
       },
     ],
   };

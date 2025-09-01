@@ -13,9 +13,10 @@ function MyComponent({ items }) {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="relative w-full px-[16px] sm:px-[24.5px] xl:px-[83px] 2xl:px-[323px] mt-[48px] mb-[80px]">
+    <div className="relative w-full px-[16px] sm:px-[24.5px] md:px-[80
+    px] xl:px-[83px] 2xl:px-[323px] mt-[48px] mb-[80px]">
       {/* Bubble on left side */}
-      <div className="absolute hidden 2xl:block -left-16 top-1/2 -translate-y-1/2 w-52 h-52 bg-[#E9F8FB] rounded-full opacity-70 blur-2xl"></div>
+      <div className="absolute hidden 2xl:block -left-16 top-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[#EAF9F] rounded-full opacity-70 blur-2xl"></div>
 
       {/* Swiper Wrapper */}
       <div className="flex justify-center items-center w-full">

@@ -8,7 +8,7 @@ function Card({ heading, Title, end }) {
         gap-4
         w-full max-w-[466px]   
         h-auto                 
-        pl-2            
+        sm:pl-2            
         rounded-2xl z-50
       "
     >

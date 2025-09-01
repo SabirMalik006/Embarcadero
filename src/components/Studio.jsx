@@ -6,13 +6,13 @@ const Studio = () => {
       <div className="main flex justify-center items-center mt-[80px] relative  ">
         {/* Top-right Arrow */}
         <img
-          className="hidden 2xl:block absolute right-65 w-16 arrow-img"
+          className="hidden 2xl:block absolute top-0 right-65 w-16 arrow-img"
           src="./image/arrow.png"
           alt=""
         />
 
         <img
-          className="hidden  2xl:block absolute right-72 bottom-6 w-16 sm:w-24 md:w-auto"
+          className="hidden  2xl:block absolute right-72 bottom-12 w-16 sm:w-24 md:w-auto"
           src="./image/Group.png"
           alt=""
         />

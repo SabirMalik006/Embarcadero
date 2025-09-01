@@ -49,15 +49,15 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
   return (
     <div className="w-full flex flex-col items-center relative">
       <div
-        className="absolute hidden xl:block left-0 xl:left-10   bottom-0 
-  w-[500px] h-[400px]  
-  bg-blue-100 opacity-70 blur-3xl 
-  rounded-xl"
+        className="absolute hidden xl:block left-0 xl:left-0   bottom-0 
+  w-[500px] h-[500px]  
+  bg-[#e0f8fd] opacity-70 blur-3xl 
+  rounded-2xl"
       ></div>
       <div
         className="absolute hidden xl:block right-5 top-0 
-  w-[500px] h-[400px]  
-  bg-blue-100 opacity-70 blur-3xl 
+  w-[600px] h-[300px]  
+  bg-[#e0f8fd] opacity-70 blur-3xl 
   rounded-xl"
       ></div>
       {/* Heading */}
@@ -65,7 +65,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
         <p className="text-[30px] sm:text-[36px] xl:text-5xl font-semibold z-50">
           Learn More on the{" "}
           <span
-            className="bg-gradient-to-r from-[#FE3B76] via-[#e0296f] to-[#cc00ff] 
+            className="bg-gradient-to-r from-[#FE3B76] via-[#e0296f] to-[#bf07ec] 
             inline-block text-transparent bg-clip-text font-semibold xl:text-5xl"
           >
             &nbsp;Embarcadero Blog

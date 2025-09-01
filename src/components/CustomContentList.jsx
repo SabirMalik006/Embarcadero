@@ -32,20 +32,19 @@ function CustomContentList({ data }) {
             bg-white 
             rounded-lg 
             overflow-hidden 
-            mx-auto
-            max-w-5xl xl:max-w-[1920px]
+            mx-4 lg:mx-auto
+            max-w-5xl xl:max-w-[1920px] 
           "
           >
             {/* Image Section */}
             <div className="w-full lg:w-1/2 bg-[#4F4D4D] flex items-center justify-center">
-              <img
-                src={item.image}
-                alt=""
-                className={`object-contain
-                w-full 
-                max-h-[280px] sm:max-h-[400px] lg:max-h-full
-              `}
-              />
+              <div className="w-full h-[300px] sm:h-[400px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px] flex items-center justify-center ">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="max-h-full max-w-full object-contain bg-transparent"
+                />
+              </div>
             </div>
 
             {/* Text Section */}
@@ -53,7 +52,7 @@ function CustomContentList({ data }) {
               <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-red-500/8 to-transparent pointer-events-none rounded-lg"></div>
 
               {/* Heading */}
-              <h2 className="font-medium sm:font-semibold text-[24px] 2xl:text-2xl 2xl:font-medium mb-4">
+              <h2 className="font-medium text-[24px] xl:text-[28px]  2xl:text-[24px]  2xl:text-2xl 2xl:font-medium mb-4">
                 {item.heading}
               </h2>
 
