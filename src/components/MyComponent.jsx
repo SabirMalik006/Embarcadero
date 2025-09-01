@@ -13,8 +13,10 @@ function MyComponent({ items }) {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="relative w-full px-[16px] sm:px-[24.5px] md:px-[80
-    px] xl:px-[83px] 2xl:px-[323px] mt-[48px] mb-[80px]">
+    <div
+      className="relative w-full px-[16px] sm:px-[24.5px] md:px-[80
+    px] xl:px-[83px] 2xl:px-[323px] mt-[48px] mb-[80px]"
+    >
       {/* Bubble on left side */}
       <div className="absolute hidden 2xl:block -left-16 top-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[#EAF9F] rounded-full opacity-70 blur-2xl"></div>
 
@@ -64,28 +66,26 @@ function MyComponent({ items }) {
       <div className="flex justify-center items-center gap-4 mt-8">
         {/* Prev Arrow */}
         <div
-          className={`custom-prev flex justify-center items-center w-9 h-9 rounded-lg cursor-pointer transition-opacity 
+          className={`custom-prev flex justify-center items-center w-9 h-9 rounded-lg cursor-pointer transition-opacity
       ${
         isBeginning
-          ? "bg-[#c0b9b9] cursor-not-allowed" 
-          : isEnd
-          ? "bg-black cursor-pointer" 
-          : "bg-[#c0b9b9] hover:opacity-80"
-      }`}
+          ? "bg-[#CBD0D2] cursor-not-allowed"
+          : "bg-[#262626] hover:opacity-80"
+      }
+    `}
         >
           <img src="./image/Vector 106 (1).png" alt="Prev" />
         </div>
 
         {/* Next Arrow */}
         <div
-          className={`custom-next flex justify-center items-center w-9 h-9 rounded-lg cursor-pointer transition-opacity 
+          className={`custom-next flex justify-center items-center w-9 h-9 rounded-lg cursor-pointer transition-opacity
       ${
         isEnd
-          ? "bg-[#c0b9b9] cursor-not-allowed" 
-          : isBeginning
-          ? "bg-black cursor-pointer" 
-          : "bg-black hover:opacity-80"
-      }`}
+          ? "bg-[#CBD0D2] cursor-not-allowed"
+          : "bg-[#262626] hover:opacity-80"
+      }
+    `}
         >
           <img src="./image/Vector 106.png" alt="Next" />
         </div>

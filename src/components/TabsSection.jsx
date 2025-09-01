@@ -36,7 +36,7 @@ function TabsSection({ tabsData }) {
         </p>
         <p
           className="text-3xl sm:text-[36px] xl:text-5xl font-medium 
-  bg-gradient-to-r from-[#FE3B76] via-[#FE3B76CC] via-[#2931DDCC] to-[#2931DD] 
+  bg-gradient-to-r from-[#FE3B76] via-[#fa0e55cc] via-[#2931DDCC] to-[#2931DD] 
   text-transparent bg-clip-text hidden sm:block md:hidden"
         >
           <span className="text-black">Ignite </span>
@@ -67,7 +67,7 @@ function TabsSection({ tabsData }) {
                   className={`
           ${
             isMobile
-              ? "flex-shrink-0 w-[107px] xl:w-[160px] first:rounded-l-[12px] "
+              ? "flex-shrink-0 w-[110px] sm:w-[118px] xl:w-[160px] first:rounded-l-[12px] "
               : "flex-1"
           }
           text-[20px] md:text-[24px] 2xl:font-medium 
