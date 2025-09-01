@@ -2,7 +2,7 @@ import React from "react";
 
 const HomePageWithRectangle = () => {
   return (
-    <div className="w-full max-w-[1920px] mx-auto relative px-[10px]">
+    <div className="w-full max-w-[1920px] mx-auto relative px-[16px]">
       {/* Bubble on left side */}
       <div
         className="hidden 2xl:block absolute w-[700px] h-[420px] 
@@ -58,7 +58,7 @@ const HomePageWithRectangle = () => {
       </div>
 
       {/* Buttons Section */}
-      <div className="flex flex-col sm:flex-row justify-center items-center mt-6 gap-2 px-[6px] sm:px-0 ">
+      <div className="flex flex-col sm:flex-row justify-center items-center mt-6 gap-2  sm:px-0 ">
         <button
           className="bg-black text-white px-5 py-3 sm:px-6 sm:py-3 rounded-xl w-full sm:w-[189px] z-61 
   transition-all duration-500 ease-in-out transform hover:opacity-70 hover:scale-105 cursor-pointer"
