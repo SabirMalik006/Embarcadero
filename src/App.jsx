@@ -67,6 +67,16 @@ const App = () => {
       image: "./image/user.png",
     },
     {
+      name: "Windows 11",
+      des: "Modernize VCL apps for Windows 11 with up-to-date user interface controls, WinRT APIs, and HighDPI-related features",
+      image: "./image/microsoft.png",
+    },
+    {
+      name: "User Experience",
+      des: "Completely rebuilt Welcome Page with a native look and feel, and a UI that fits the IDE, and customizable layout and content.",
+      image: "./image/user.png",
+    },
+    {
       name: "Android",
       des: "Support for the latest Android Level 32 API and latest Billing APIs, and migration to use the AndroidX libraries. Android support for multiple classes.",
       image: "./image/android.png",
