@@ -67,17 +67,17 @@ function TabsSection({ tabsData }) {
                   className={`
           ${
             isMobile
-              ? "flex-shrink-0 w-[110px] sm:w-[118px] xl:w-[160px] first:rounded-l-[12px] "
-              : "flex-1"
+              ? "flex-shrink-0 min-w-[107px]  xl:w-[160px] first:rounded-l-[12px]  "
+              : "flex-1 "
           }
           text-[20px] md:text-[24px] 2xl:font-medium 
           2xl:text-2xl 
-          py-3 cursor-pointer
+          py-[1rem] px-[1.5rem] cursor-pointer
           transition-colors duration-300 ease-in-out 
           whitespace-nowrap rounded-[12px]  
           ${
             activeTab === tab
-              ? "bg-[#262626] text-white rounded-xl"
+              ? "bg-[#262626] text-white rounded-xl "
               : "bg-transparent text-gray-600"
           }
         `}
