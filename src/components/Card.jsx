@@ -10,6 +10,7 @@ function Card({ heading, Title, end }) {
         h-auto                 
         sm:pl-2            
         rounded-2xl z-50
+        
       "
     >
       <h2 className="text-[18px] sm:text-lg xl:text-xl font-normal tracking-wide text-gray-500">

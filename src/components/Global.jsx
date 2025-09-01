@@ -2,12 +2,12 @@ import React from "react";
 
 const Global = () => {
   return (
-    <div className="relative max-w-[1920px] xl:mt-[128px] sm:mt-[120px] mt-[80px]  ">
+    <div className="relative max-w-[1920px] xl:mt-[128px] sm:mt-[120px] mt-[80px] overflow-hidden  ">
       {/* Background blur box */}
       <div
         className="absolute hidden xl:block 
         w-[400px] h-[300px] 
-        bg-red-100/50 rounded opacity-70 blur-3xl left-0 top-35"
+        bg-red-100/60 rounded opacity-70 blur-3xl left-0 top-35"
       ></div>
 
       <div className="mx-auto  sm:px-6 lg:px-24 xl:px-20 2xl:px-48 flex flex-col lg:flex-row items-center justify-between xl:gap-10">

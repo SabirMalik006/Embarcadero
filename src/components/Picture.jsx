@@ -14,12 +14,12 @@ const Picture = () => {
         className="absolute hidden
              2xl:h-[816px] 2xl:w-[1000px]
              2xl:l-[-565px] 2xl:t-[19px] 
-             xl:h-[750px] xl:w-[1014px] 
+             xl:h-[810px] xl:w-[1014px] 
             
              sm:w-[750px] sm:h-auto 
-             sm:left-[-595px] sm:top-[-15px] 
+             sm:left-[-609px] sm:top-[-15px] 
             
-                          sm:block"
+                          xl:block"
         src="./image/fullVector1.svg"
         alt="Background Left"
       />
@@ -29,13 +29,32 @@ const Picture = () => {
              2xl:h-[1430px] 2xl:w-[822px] 2xl:right-[-409px] 2xl:top-[-137px] 
              xl:w-[850px] xl:h-[700px] xl:right-[-410px] xl:top-[172px] 
              sm:w-[850px] sm:h-[700px] sm:right-[-446px] sm:top-[240px] 
-              sm:block"
+              xl:block"
         src="./image/v.svg"
         alt="Background Right"
       />
 
-      <img src="./image/xsVector1.svg" alt="" className="absolute sm:hidden w-[92%] right-[305px] top-[-30px] " />
-      <img src="./image/xsVector.svg" alt="" className="absolute sm:hidden w-[93%] left-[228px] top-[223px] " />
+      <img
+        src="./image/md.svg"
+        alt=""
+        className="absolute hidden sm:block xl:hidden w-[96%] right-[604px] top-[-45px]"
+      />
+      <img
+        src="./image/md1.svg"
+        alt=""
+        className="absolute hidden sm:block  xl:hidden w-[93%] left-[454px] top-[210px]"
+      />
+
+      <img
+        src="./image/xsVector1.svg"
+        alt=""
+        className="absolute sm:hidden w-[92%] right-[305px] top-[-30px] "
+      />
+      <img
+        src="./image/xsVector.svg"
+        alt=""
+        className="absolute sm:hidden w-[93%] left-[228px] top-[223px] "
+      />
 
       {/* Heading */}
       <div className="mb-8 relative z-10 ">

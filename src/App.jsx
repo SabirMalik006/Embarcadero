@@ -313,7 +313,7 @@ const App = () => {
   const tabsData = {
     Design: [
       {
-        image: "./image/image2.png",
+        image: "./image/real.png",
         heading: "Design beautiful desktop and mobile app UIs with RAD Studio.",
         bullets: [
           "Use Delphi's award-winning VCL framework for Windows and the FireMonkey (FMX) visual framework for cross-platform responsive UIs.",
@@ -328,7 +328,7 @@ const App = () => {
     ],
     Develop: [
       {
-        image: "./image/Frame 427318143.png",
+        image: "./image/image2.png",
         heading: "Code Faster and Smarter with Delphi",
         bullets: [
           "IDE support for Markdown documents and VCL-based HTML preview.",

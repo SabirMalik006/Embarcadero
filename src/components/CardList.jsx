@@ -47,17 +47,17 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
 
 
   return (
-    <div className="w-full flex flex-col items-center relative">
+    <div className="w-full flex flex-col items-center relative overflow-hidden  sm:pb-[128px]">
       <div
-        className="absolute hidden xl:block left-0 xl:left-0   bottom-0 
+        className="absolute hidden md:block left-0 bottom-[-5px] 
   w-[500px] h-[500px]  
-  bg-[#e0f8fd] opacity-70 blur-3xl 
+  bg-[#ECFBFC] opacity-70 blur-3xl 
   rounded-2xl"
       ></div>
       <div
-        className="absolute hidden xl:block right-5 top-0 
+        className="absolute hidden md:block right-5 top-5 
   w-[600px] h-[300px]  
-  bg-[#e0f8fd] opacity-70 blur-3xl 
+  bg-[#ECFBFC] opacity-70 blur-3xl 
   rounded-xl"
       ></div>
       {/* Heading */}
