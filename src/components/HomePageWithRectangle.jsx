@@ -19,9 +19,9 @@ const HomePageWithRectangle = () => {
       ></div>
 
       <div
-        className="hidden sm:block 2xl:hidden absolute w-[800px] h-[490px] 
+        className="block 2xl:hidden absolute w-[800px] h-[490px] 
                    bg-gradient-to-r from-[#edf0f1] via-[#edf7f7] to-[#ffffff]
-                   left-0 -top-28 sm:-top-29 md:-top-20 opacity-80"
+                   left-0 -top-31 sm:-top-29 md:-top-20  opacity-80"
         style={{
           borderTopRightRadius: "250px",
           borderBottomRightRadius: "250px",
@@ -38,6 +38,10 @@ const HomePageWithRectangle = () => {
         className="absolute hidden sm:block -top-10 right-0 
                    w-[600px] h-[1400px] sm:w-[350px] sm:h-[970px] md:w-[600px] md:h-[1400px]
                    bg-red-100 opacity-70 blur-3xl 
+                   rounded-l-full"
+      ></div>
+      <div
+        className="absolute  block sm:hidden top-0 right-0 bg-red-200/60 opacity-70 blur-3xl w-[300px] h-[500px]
                    rounded-l-full"
       ></div>
 
@@ -81,7 +85,7 @@ const HomePageWithRectangle = () => {
             src="./image/Rectangle 364.png"
             alt=""
           />
-          <img  
+          <img
             className="w-[22px] h-[22px] sm:w-[46px] sm:h-[46px] xl:w-[85px] xl:h-[85px] 
                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             src="./image/Frame 427318308.png"

@@ -148,13 +148,13 @@ const Navbar = () => {
                 <img
                   src="./image/image 1.png"
                   alt="Company Logo"
-                  className="h-6 w-auto"
+                  className="h-6 w-auto cursor-pointer"
                 />
               </div>
 
               {/* Close Button (Right side) */}
               <button
-                className="text-gray-700 hover:text-black text-[24px]"
+                className="text-gray-700 hover:text-black text-[24px] cursor-pointer"
                 onClick={() => setShowMenu(false)}
               >
                 <RxCross2 />
@@ -173,7 +173,7 @@ const Navbar = () => {
             <div className="px-6 pt-4 pr-10 grid grid-cols-2 gap-4">
               <a
                 href=""
-                className="text-[14px]  font-medium cursor-pointer text-[#262626] "
+                className="text-[14px]  font-medium cursor-pointer text-[#262626]  "
               >
                 MyDownloads
               </a>
@@ -200,23 +200,23 @@ const Navbar = () => {
             {/* Navigation Links */}
             <ul className="flex flex-col gap-[34px] px-6 py-6">
               <li className="flex items-center justify-between gap-2 group cursor-pointer">
-                <a href="" className="font-medium text-[#262626]">
+                <a href="" className="font-medium text-[#262626] cursor-pointer">
                   Products
                 </a>
                 <img
                   src="./image/downArrow.png"
-                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180"
+                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180 cursor-pointer"
                   alt=""
                 />
               </li>
 
               <li className="flex items-center justify-between gap-2 group cursor-pointer">
-                <a href="" className="font-medium text-[#262626]">
+                <a href="" className="font-medium text-[#262626] cursor-pointer">
                   Free Tools
                 </a>
                 <img
                   src="./image/downArrow.png"
-                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180"
+                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180 cursor-pointer"
                   alt=""
                 />
               </li>
@@ -224,19 +224,19 @@ const Navbar = () => {
               <li>
                 <a
                   href=""
-                  className="font-medium cursor-pointer text-[#262626]"
+                  className="font-medium cursor-pointer text-[#262626] "
                 >
                   Blog
                 </a>
               </li>
 
               <li className="flex items-center justify-between gap-2 group cursor-pointer">
-                <a href="" className="font-medium text-[#262626]">
+                <a href="" className="font-medium text-[#262626] cursor-pointer">
                   Resources
                 </a>
                 <img
                   src="./image/downArrow.png"
-                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180"
+                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180 cursor-pointer"
                   alt=""
                 />
               </li>
@@ -244,7 +244,7 @@ const Navbar = () => {
               <li>
                 <a
                   href=""
-                  className="font-medium cursor-pointer text-[#262626]"
+                  className="font-medium cursor-pointer text-[#262626] "
                 >
                   Getit
                 </a>
@@ -261,21 +261,19 @@ const Navbar = () => {
             </ul>
 
             {/* Mobile buttons */}
-            <div className="flex flex-col gap-3 mt-auto px-5  pb-6">
-              <button className="w-full bg-black text-white py-3 rounded-[12px] font-medium cursor-pointer">
+            <div className="flex flex-col gap-3 mt-auto px-8 sm:px-9 pb-6">
+              <button className="w-full bg-black text-white py-3 rounded-[12px] font-medium cursor-pointer   border-black  text-[16px] transition-transform duration-300 ease-in-out hover:scale-102 hover:opacity-60">
                 <a href="">Free trial</a>
               </button>
-              <button className="w-full border text-[#262626] border-[#171717]  py-3 rounded-[12px] font-medium cursor-pointer">
+              <button className="w-full border text-[#262626] border-[#171717]  py-3 rounded-[12px]  cursor-pointer bg-white  font-medium text-[16px] transition-colors duration-300 ease-in-out hover:bg-black hover:text-white hover:border-white">
                 <a href="">Buy Now</a>
               </button>
-              <button className="p-2">
-                <a
-                  href="#"
-                  className="inline-block border-b text-[#262626] border-black cursor-pointer font-medium"
-                >
-                  Sign In
-                </a>
-              </button>
+              <button className="p-2 group">
+              <a href="#" className="relative inline-block">
+                <span className="relative z-10">Sign In</span>
+                <span className="absolute left-0 bottom-[1px] h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </button>
             </div>
           </div>
         </>

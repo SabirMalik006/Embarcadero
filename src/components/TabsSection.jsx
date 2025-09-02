@@ -54,7 +54,7 @@ function TabsSection({ tabsData }) {
           
           <div
             className={`
-    flex border p-2 border-[#E5E5E5] ml-4 lg:ml-0  
+    flex border p-2 border-[#E5E5E5] ml-4 lg:ml-0 border-r-0  lg:border-r-1
     ${isMobile ? "rounded-l-[12px]" : "rounded-[12px]  " }
     ${isMobile ? "overflow-x-auto hide-scrollbar" : "overflow-hidden "}
   `}

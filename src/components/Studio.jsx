@@ -18,8 +18,8 @@ const Studio = () => {
         />
 
         {/* Text Content */}
-        <div className="flex items-center justify-center px-[16px] sm:px-[24.5px]  xl:px-[83px] 2xl:px-[323px]">
-          <div className="text-center w-full max-w-[745px] xl:max-w-[1440px] 2xl:max-w-[1920px] z-10  rounded-lg  ">
+        <div className="flex items-center justify-center px-[16px] sm:px-[24.5px] md:px-[80px] lg:px-[83px] xl:px-[83px] 2xl:px-[323px]">
+          <div className="text-center w-full  xl:max-w-[1440px] 2xl:max-w-[1920px] z-10  rounded-lg  ">
           
             <p className="hidden sm:block mb-4 text-[28px] sm:text-[40px] lg:text-5xl font-bold">
               <span className="bg-gradient-to-r from-[#ff17d8] via-[#8429ce] to-[#2931DD] inline-block text-transparent bg-clip-text">

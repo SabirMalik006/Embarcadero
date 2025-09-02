@@ -60,6 +60,15 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
   bg-[#ECFBFC] opacity-70 blur-3xl 
   rounded-xl"
       ></div>
+      <div
+  className="absolute sm:hidden 
+             top-1/2 left-1/2 
+             w-[500px] h-[400px]  
+             bg-red-100/30 opacity-70 blur-3xl 
+             rounded-xl 
+             transform -translate-x-1/2 -translate-y-1/2"
+></div>
+
       {/* Heading */}
       <div className="flex flex-col lg:flex-row justify-center items-center gap-[42px] mb-[30px] mt-[80px] sm:mb-[64px]   xl:mt-[128px]  xl:mb-[105px] text-center lg:text-left max-w-5xl xl:max-w-6xl 2xl:max-w-[1920px] w-full">
         <p className="text-[30px] sm:text-[36px] xl:text-5xl font-semibold z-50">
