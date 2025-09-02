@@ -63,7 +63,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
       <div
   className="absolute sm:hidden 
              top-1/2 left-1/2 
-             w-[500px] h-[400px]  
+             w-[500px] h-[700px]  
              bg-red-100/30 opacity-70 blur-3xl 
              rounded-xl 
              transform -translate-x-1/2 -translate-y-1/2"
