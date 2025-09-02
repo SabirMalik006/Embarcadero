@@ -142,7 +142,7 @@ const Navbar = () => {
             <TopBar />
 
             {/* Company Bar (Logo + Cross) */}
-            <div className="fixed top-[100px] sm:top-[44px] left-0 right-0 flex items-center justify-between px-4 py-6 sm:pl-10 sm:pr-14 sm:py-8 bg-[#F8F9FC]">
+            <div className="fixed top-[100px] sm:top-[44px] left-0 right-0 flex items-center justify-between px-4 py-6  sm:pl-6 sm:pr-10 sm:py-8 bg-[#F8F9FC]">
               {/* Company Logo / Name (Left side) */}
               <div className="flex items-center gap-2">
                 <img
