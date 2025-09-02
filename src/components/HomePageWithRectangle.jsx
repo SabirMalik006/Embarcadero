@@ -41,7 +41,7 @@ const HomePageWithRectangle = () => {
                    rounded-l-full"
       ></div>
       <div
-        className="absolute  block sm:hidden top-0 right-0 bg-red-200/60 opacity-70 blur-3xl w-[300px] h-[500px]
+        className="absolute  block sm:hidden top-0 right-0 bg-red-100 opacity-70 blur-3xl w-[300px] h-[500px]
                    rounded-l-full"
       ></div>
 
