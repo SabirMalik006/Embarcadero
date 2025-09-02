@@ -167,7 +167,7 @@ const Navbar = () => {
             className="fixed top-[162px] sm:top-[120px] right-0 bottom-0 
               w-full sm:w-3/4 sm:max-w-sm 
               bg-[#F6F8FB] shadow-lg flex flex-col justify-start overflow-y-auto 
-              transition-transform duration-300 z-102 lg:hidden"
+              transition-transform duration-300 z-102 lg:hidden scrollbar-hide"
           >
             {/*content */}
             <div className="px-6 pt-4 pr-10 grid grid-cols-2 gap-4">

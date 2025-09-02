@@ -101,7 +101,7 @@ const Global = () => {
              bg-[#262626] text-white 
              shadow-[0px_4px_32px_rgba(255,94,101,0.1)] 
              rounded-lg 
-             transition-transform duration-300 ease-in-out hover:scale-102 hover:opacity-60  cursor-pointer z-200"
+             transition-transform duration-300 ease-in-out hover:scale-102 hover:opacity-60  cursor-pointer z-100"
             >
               Subscribe
             </button>

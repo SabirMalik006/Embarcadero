@@ -6,18 +6,18 @@ const TopBar = () => {
       <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 text-center sm:text-left">
         {/* Left Section */}
         <div className="flex flex-col sm:flex-row items-center gap-2 flex-wrap ">
-          <p className="flex flex-wrap text-[14px] gap-1 justify-center sm:justify-start">
+          <p className="flex flex-wrap text-[14px] gap-1  justify-center sm:justify-start">
             <span className="font-light">See what’s new in</span>&nbsp; Delphi,
             C++ Builder, and RAD Studio{" "}
-            <span className="hidden md:block text-[14px] cursor-pointer">Watch The Replay</span>
+            <span className="hidden md:block text-[14px]  cursor-pointer">Watch The Replay</span>
           </p>
           <a
   href="#"
-  className="relative inline-block leading-none pb-[1px] group"
+  className="relative inline-block leading-none pb-[1px] group "
 >
-  <span className="relative z-10 text-white">Watch The Replay</span>
+  <span className="relative z-10 text-white text-[14px] cursor-pointer">Watch The Replay</span>
   <span
-    className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"
+    className="absolute left-0 bottom-0 h-[1px]  w-0 bg-white transition-all duration-300 group-hover:w-full"
   ></span>
 </a>
 
