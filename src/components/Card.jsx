@@ -22,13 +22,13 @@ function Card({ heading, Title, end }) {
       </h1>
 
       <button className="flex font-normal items-center gap-2 text-sm lg:text-md xl:text-lg text-gray-500 group">
-        {/* Text with underline animation */}
+       
         <span className="relative inline-block font-medium text-[18px] sm:text-lg 2xl:text-xl cursor-pointer">
           {end}
           <span className="absolute left-0 bottom-[1px] h-[2px] w-0 bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
         </span>
 
-        {/* Arrow with smooth move */}
+       
         <img
           className="w-7  transition-transform duration-300 cursor-pointer group-hover:translate-x-1"
           src="./image/picArrow.png"

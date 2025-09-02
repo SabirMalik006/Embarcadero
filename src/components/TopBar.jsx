@@ -25,7 +25,7 @@ const TopBar = () => {
 
         {/* Right Section */}
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 flex-wrap justify-center ">
-          {/* Links - hidden on xl */}
+          
           <ul className="flex gap-4 flex-wrap text-xs 2xl:text-base hidden xl:flex">
             <li>
               <a href="#">My Downloads</a>
@@ -41,7 +41,7 @@ const TopBar = () => {
             </li>
           </ul>
 
-          {/* Icons - always visible */}
+          
           <div className="flex gap-3 justify-center">
             <img
               src="./image/firstSearch.svg"

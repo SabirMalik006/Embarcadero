@@ -3,7 +3,7 @@ import React from "react";
 const Global = () => {
   return (
     <div className="relative max-w-[1920px] xl:mt-[128px] sm:mt-[120px] mt-[80px] overflow-hidden  ">
-      {/* Background blur box */}
+
       <div
         className="absolute block 
         w-[400px] h-[300px] 
@@ -50,9 +50,9 @@ const Global = () => {
 
               {/* XS only */}
               <div className="w-full flex justify-center px-4 sm:hidden">
-                {/* Parent with max width 375px */}
+                
                 <div className="w-[375px] px-4">
-                  {/* Inner div with 343px width */}
+                  
                   <div className="w-[343px] flex flex-col items-center justify-center text-center ">
                     <h3
                       className="text-[30px] font-semibold whitespace-nowrap 

@@ -1,4 +1,3 @@
-// MyComponent.jsx
 import React, { useState } from "react";
 import Box from "./Box";
 import { Swiper, SwiperSlide } from "swiper/react";

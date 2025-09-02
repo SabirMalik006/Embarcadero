@@ -16,7 +16,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
 
   return chunks.map((group, rowIndex) => (
     <div key={rowIndex} className="w-full 2xl:px-48 xl:px-20 px-4">
-      {/* Row of cards */}
+     
       <div
         className={`
           grid gap-4 md:gap-6 lg:gap-8 
@@ -37,7 +37,7 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
         ))}
       </div>
 
-      {/* Dotted line after rows */}
+      
       {(onlyFirstRowLine ? rowIndex === 0 : rowIndex < chunks.length - 1) && (
         <hr className="my-6 sm:my-12 xl:my-20 custom-dashed" />
       )}
@@ -90,15 +90,15 @@ const renderCards = (chunkSize, onlyFirstRowLine = false) => {
       {/* Cards */}
       <div className="w-full flex justify-center">
         <div className="w-full max-w-[1920px]">
-          {/* Mobile (1 per row → line every card) */}
+          
           <div className="block sm:hidden w-full">{renderCards(1)}</div>
 
-          {/* Tablet (2 per row → line every 2 cards) */}
+          
           <div className="hidden sm:block lg:hidden w-full">
             {renderCards(2)}
           </div>
 
-          {/* Desktop / 2xl (3 per row → line only after first 3) */}
+          
           <div className="hidden lg:block w-full">{renderCards(3, true)}</div>
         </div>
       </div>

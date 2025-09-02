@@ -6,10 +6,10 @@ function CustomContentList({ data }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 640); // sm = 640px
+      setIsSmallScreen(window.innerWidth < 640); 
     };
 
-    handleResize(); // initial check
+    handleResize(); 
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
@@ -75,7 +75,7 @@ function CustomContentList({ data }) {
                   <span className="relative z-10">Matrix</span>
                   <span className="absolute bottom-[2px] left-0 h-[1px] w-full bg-black rounded-full"></span>
                 </span>
-                {/* Icon */}
+                
                 &nbsp;
                 <IoCloudDownloadOutline className="w-7 h-7 absolute sm:static right-2 top-2" />
               </div>
